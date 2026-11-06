@@ -70,7 +70,7 @@ flowchart TD
 
 ## 2. S0｜品牌与数字身份基线（P0）
 
-> **2026-10-25 执行核查：部分完成，Gate 0 未通过。** 具体证据、未确认事项与可执行链接参见 [`brand/identity.md`](brand/identity.md)、[`S0-REPORT.md`](S0-REPORT.md)。`[x]` 仅代表注明的成果已经存在，不意味着注册或授权已完成。
+> **2026-10-25 执行核查：部分完成，Gate 0 未通过。** 具体证据、未确认事项与可执行链接参见 `brand/identity.md`（历史本地交付，当前仓库未收录）、`S0-REPORT.md`（历史本地交付，当前仓库未收录）。`[x]` 仅代表注明的成果已经存在，不意味着注册或授权已完成。
 
 **目标：** 明确源文件、账号、名称、资产归属及可发布内容，防止重名、源文件丢失和误用。
 
@@ -95,7 +95,7 @@ flowchart TD
 
 > **当前执行口径（2026-11-06）：** 详见附录 A。用户已暂缓 SVG，S1 以统一 PNG 物料作为当前可使用的视觉基准；字形专业核验和正式品牌授权仍待完成。下文 SVG 相关勾选为历史候选成果，不表示现有 PNG 交付包含最终 SVG。
 
-> **2026-10-25 执行更新：** 已生成可重建的 SVG/PNG 品牌母版候选、导出脚本和视觉规范；`織` 字印章为待核对草稿，授权/定稿审核未完成。因此 Gate 1 **暂未完全通过**。详见 [`Primordial_Weave_S1/S1-REPORT.md`](Primordial_Weave_S1/S1-REPORT.md)。
+> **2026-10-25 执行更新：** 已生成可重建的 SVG/PNG 品牌母版候选、导出脚本和视觉规范；`織` 字印章为待核对草稿，授权/定稿审核未完成。因此 Gate 1 **暂未完全通过**。详见 `Primordial_Weave_S1/S1-REPORT.md`（历史本地交付，当前仓库未收录）。
 
 **目标：** 从 AI 视觉参考转成**可重复导出、几何准确、在所有尺寸都一致**的正式品牌标识。
 
@@ -232,7 +232,7 @@ flowchart TD
 
 ## 5. S3｜开源工程与治理模板（P1）
 
-> **2026-11-06 实施结果：** GitHub `primordialweave/.github` 已新增 11 个组织级社区文件；`primordialweave/project-template` 已初始化并提交双语模板、文档、安全与许可清单、GitHub Issue/PR 模板、Dependabot 和 CI，自检工作流已在 GitHub Actions 成功完成。当前仓库 `is_template=false`，项目许可证与分支保护仍未配置，Gate 3 **未完全通过**。详见 [`S3-REPORT.md`](S3-REPORT.md) 和线上 [`S3-STANDARDS.md`](https://github.com/primordialweave/.github/blob/main/S3-STANDARDS.md)。
+> **2026-11-06 实施结果：** GitHub `primordialweave/.github` 已新增 11 个组织级社区文件；`primordialweave/project-template` 已初始化并提交双语模板、文档、安全与许可清单、GitHub Issue/PR 模板、Dependabot 和 CI，自检工作流已在 GitHub Actions 成功完成。当前仓库 `is_template=false`，项目许可证与分支保护仍未配置，Gate 3 **未完全通过**。详见 `S3-REPORT.md`（历史本地交付，当前仓库未收录） 和线上 [`S3-STANDARDS.md`](https://github.com/primordialweave/.github/blob/main/S3-STANDARDS.md)。
 
 **目标：** 后续每一个项目都可以遵循相同的质量基线，而不是重复从零编写规范。
 
