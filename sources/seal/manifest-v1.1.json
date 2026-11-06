@@ -1,0 +1,33 @@
+{
+  "name": "Primordial Weave | 織 seal enlarged",
+  "version": "1.1",
+  "source": "朱砂古印_織.png",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "visual_change": "Crop excess transparent margin; enlarge original unchanged ink graphic, no new glyph generation",
+  "source_approval": "User-approved visual form, glyph scholarly certification not claimed",
+  "files": [
+    {
+      "file": "pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png",
+      "sha256": "a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368",
+      "bytes": 10488954
+    },
+    {
+      "file": "pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png",
+      "sha256": "48c93816b21138a7506f490340424e69e4db25621a6fc5868d001413fae5525a",
+      "bytes": 4661014
+    },
+    {
+      "file": "pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png",
+      "sha256": "1771204b51f1b80d275b8d42e95a791421b855629b68bcc20abfded10ecfd948",
+      "bytes": 1461365
+    },
+    {
+      "file": "pw-seal-zhi-on-paper-proof-v1.1.png",
+      "sha256": "38388f9a9fd0b89890a3582f9cd4c608a9903bc640050d67e3897fb4bbd85e04",
+      "bytes": 1179745
+    }
+  ]
+}
