@@ -7,13 +7,15 @@
 | Resource | Current treatment |
 | --- | --- |
 | Organization name / logo / Taiji-derived mark | Brand identity; seek explicit permission before adaptation or commercial use |
-| `織` seal, illustrations, banners and OG images | Brand creative; approval, provenance and glyph validation pending |
+| `織` seal V1.0 | Official brand visual artwork approved on 2026-11-06; no general reuse license granted; scholarly small-seal certification not claimed |
 | Font names and typography token references | Design data only; do not redistribute actual font files |
 | GitHub organization docs | Public documentation; separate license decision needed for broad republication |
 | Software source in other repositories | Governed by the **specific project's** LICENSE if and when one is published |
 | Third-party artwork / code / data | Subject to its own rights and verified source license |
 
 ## Before publishing actual brand graphics
+
+**Note:** the seal artwork has been visually approved, but the GitHub-hosted PNG binary is not yet uploaded. Brand approval and public redistribution permission are separate decisions.
 
 - [ ] Identify creator/source and original files.
 - [ ] Verify third-party reference and font licenses.

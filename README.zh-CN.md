@@ -10,7 +10,7 @@
 
 **Primordial Weave（原初织界）** 是以中国传统哲学、水墨审美和现代开源精神为灵感的品牌。
 
-> **当前状态：文档先行，视觉待定稿（2026-11-06）。** 本仓库此阶段只上传文字规范和候选设计 Token。Logo、太极、朱砂印章、Banner、PNG、SVG 以及字体文件**均未上传**，后续完成打磨、字形核验及权利确认后再入库。仓库公开不等于这些品牌素材已获开放使用许可。
+> **当前状态：正式采用「織」朱砂品牌印章 V1.0，其余视觉继续打磨（2026-11-06）。** 印章 PNG 原图已在本地交付包中锁定，GitHub 仓库已登记版本及校验值，但**尚未上传该二进制 PNG**。Mark、Banner、OG、头像及 SVG 都保持原状。此印章属于品牌化篆刻设计，不宣称其为已通过古文字学认证的标准小篆字形。公开仓库不等于开放商业授权。
 
 ## 文档导航
 
@@ -18,7 +18,7 @@
 | --- | --- |
 | 品牌定位、理念、视觉原则 | [品牌规范](guidelines/brand-guidelines.md) |
 | 标志和太极使用 | [Logo 使用规范](guidelines/logo-usage.md) |
-| 「織」字印章与文化考证 | [印章使用规范](guidelines/seal-usage.md) |
+| 正式印章 V1.0 与文化考证边界 | [印章使用规范](guidelines/seal-usage.md) · [资产记录](sources/seal/ASSET-RECORD.md) |
 | 中英文字体与字号建议 | [字体规范](guidelines/typography.md) |
 | 著作权、字体及开源许可边界 | [授权说明](guidelines/licensing.md) |
 | 候选标准色值 | [colors.json](design-tokens/colors.json) |
@@ -68,7 +68,7 @@ Git 无法跟踪空文件夹，因此留空的素材目录只放 `README.md` 说
 - `pw-readme-banner-v1.1.png`
 - `pw-og-general-1200x630-v1.1.png`
 - `pw-github-social-1280x640-v1.1.png`
-- `pw-seal-zhi-cinnabar-v1.1.svg`
+- `pw-seal-zhi-cinnabar-v1.0.png`（**本地已定稿，尚待上传 GitHub**；SVG 暂缓）
 
 尚未批准的稿件请放在 `references/`，或在文件名中标注 `draft`，不得与正式导出物混放。
 
