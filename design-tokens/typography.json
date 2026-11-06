@@ -1,0 +1,75 @@
+{
+  "brand": "Primordial Weave",
+  "version": "s1-png-1.3-candidate",
+  "status": "candidate-not-final",
+  "source": "S1 PNG brand guide (2026-11-06)",
+  "fontFamilies": {
+    "enBrand": {
+      "primary": "EB Garamond",
+      "fallback": [
+        "Georgia",
+        "Times New Roman",
+        "serif"
+      ],
+      "uses": [
+        "English wordmark",
+        "Brand titles",
+        "English tagline"
+      ]
+    },
+    "zhBrand": {
+      "primary": "Noto Serif CJK SC",
+      "fallback": [
+        "Source Han Serif SC",
+        "Songti SC",
+        "serif"
+      ],
+      "uses": [
+        "Chinese brand name",
+        "Chinese titles"
+      ]
+    },
+    "enUI": {
+      "primary": "Inter",
+      "fallback": [
+        "-apple-system",
+        "system-ui",
+        "sans-serif"
+      ],
+      "uses": [
+        "Website content",
+        "Software UI"
+      ],
+      "status": "recommended-only"
+    },
+    "zhUI": {
+      "primary": "Noto Sans CJK SC",
+      "fallback": [
+        "Source Han Sans SC",
+        "PingFang SC",
+        "sans-serif"
+      ],
+      "uses": [
+        "Website content",
+        "Software UI"
+      ],
+      "status": "recommended-only"
+    },
+    "code": {
+      "primary": "system-monospace",
+      "fallback": [
+        "monospace"
+      ],
+      "uses": [
+        "Code",
+        "Terminal"
+      ]
+    }
+  },
+  "policy": [
+    "Do not commit font binaries",
+    "Verify actual font license and version for publishing or commercial use",
+    "Maintain bilingual typographic hierarchy and brand spelling",
+    "Seal glyph is a separately approved graphic, not a font"
+  ]
+}
