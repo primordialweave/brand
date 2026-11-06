@@ -4,9 +4,17 @@ This log records **repository documentation and approved asset releases separate
 
 ## Unreleased
 
-- The seal V1.0 is **approved as brand artwork** and preserved in a separate PNG delivery package, but is **not yet uploaded to this GitHub repository**.
-- Existing Mark, Banner, OG and avatar images are **unchanged**; SVG work remains deferred.
-- Other visual assets and broader permissions remain under review.
+- Other brand assets, including the Logo / Mark / Banner / OG / avatar, are not replaced by the current seal release. SVG and final art licensing remain pending.
+
+## 2026-11-07 · Seal PNG V1.1 published and indexed
+
+- Set branded `織` seal **V1.1** as the current approved visual version and mark V1.0 as historical.
+- Confirmed 4096, 2048 and 1024px transparent PNG exports under `exports/png/`, and the rice-paper display image under `references/`, already exist in the repo.
+- Independently compared Git blob SHA-1 values and file sizes with the original V1.1 package; all four files matched. SHA-256 values recorded in [asset record](sources/seal/ASSET-RECORD.md).
+- Updated `sources/seal/manifest.json`, added historical `manifest-v1.0.json`, and synchronized bilingual READMEs and seal usage documentation.
+- Original 1254px raster source and final editable SVG are **not** in the repository. Upscaled 4096px PNG is not native 4K source detail.
+- **No binary images were replaced or uploaded in this documentation commit.** No change to Mark, Banner, OG, or avatar and no general-use brand license issued.
+
 
 ## 2026-11-06 · Seal visual approval V1.0
 

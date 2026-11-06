@@ -1,19 +1,20 @@
-# PNG Exports · Reserved
+# PNG Exports · Published Brand Artwork
 
-No PNG assets have been uploaded to this repository yet. Existing S1 PNG working assets are being refined outside this repository.
+The **織 cinnabar brand seal V1.1** is published in this directory as approved PNG raster artwork.
 
-When approved:
-- Export independent PNG files from the canonical source; do not enlarge collage crops.
-- Keep transparent-background variants where appropriate.
-- Document pixel dimensions, color profile, alpha/transparency and checksums.
-- Include separately verified GitHub avatar sizes, plus dark/light and monochrome variants where appropriate.
+| File | Resolution | Role |
+| --- | --- | --- |
+| [pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png](pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png) | 4096×4096 RGBA | **Current recommended transparent master export** |
+| [pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png](pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png) | 2048×2048 RGBA | Transparent derived size |
+| [pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png](pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png) | 1024×1024 RGBA | Transparent derived size |
 
-Use versioned `pw-...` filenames and update [CHANGELOG.md](../../CHANGELOG.md).
+The [paper mockup](../../references/pw-seal-zhi-on-paper-proof-v1.1.png) is stored under `references/` rather than here, and is not transparent.
 
-## Approved, not yet published in this repository
+- All three sizes come from the same visually approved source `朱砂古印_織.png`; the **original raster source is not yet stored in GitHub**.
+- The 4096px version is high-quality interpolation, **not native 4K captured detail or a vector file**.
+- Full SHA-256 and version history: [asset record](../../sources/seal/ASSET-RECORD.md).
+- V1.0 remains historical (offline PNG, not hosted in this directory).
+- These assets are visible in a public GitHub repository; that does **not** grant public trademark, derivative or commercial-use rights.
+- **No Mark, Banner, OG or avatar was replaced** during this document update.
 
-- The **織 cinnabar brand seal V1.0** is approved and archived as a local PNG deliverable.
-- Intended path after a separately authorized binary upload: `exports/png/pw-seal-zhi-cinnabar-v1.0.png`.
-- Asset hash: `a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670`.
-- This note is **not evidence that the PNG exists at the path today**.
-- Do not replace existing mark/banner/OG/avatar assets as part of the seal's approval.
+Do not store drafts or mockups here; place them in `references/` with clear labels. Track every approved revision in the [CHANGELOG](../../CHANGELOG.md).

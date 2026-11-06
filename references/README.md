@@ -1,8 +1,12 @@
 # References · Drafts and Research (Reserved)
 
-No visual drafts or historical images are being uploaded in this phase.
+The following *display-only* preview has been uploaded:
 
-Future reference assets must be explicitly labeled as **draft / reference / unapproved** and documented with:
+- [pw-seal-zhi-on-paper-proof-v1.1.png](pw-seal-zhi-on-paper-proof-v1.1.png) — 1024×1024 RGB illustration of the V1.1 seal on rice paper; **not** a transparent or canonical brand asset.
+
+Other future references remain labeled as drafts, research or mockups.
+
+Other reference assets must be explicitly labeled as **draft / reference / unapproved** and documented with:
 - Source and creation or acquisition date.
 - Rights and redistribution status.
 - Whether the reference is cultural, visual or technical.

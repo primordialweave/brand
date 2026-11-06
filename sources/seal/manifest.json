@@ -1,23 +1,79 @@
 {
   "brand": "Primordial Weave / 原初织界",
   "asset": "織 cinnabar brand seal",
-  "version": "1.0.0",
+  "current_version": "1.1.0",
+  "version": "1.1.0",
   "status": "approved-brand-artwork",
-  "source_original": "朱砂古印织字符.png",
-  "canonical_filename": "pw-seal-zhi-cinnabar-v1.0.png",
-  "size_px": {
+  "release_date": "2026-11-07",
+  "source_original": "朱砂古印_織.png",
+  "source_dimensions_px": {
     "width": 1254,
     "height": 1254
+  },
+  "source_sha256": "3b6cd5b7f0b1db5c89819a46fa5b4ae715ac6e7fbc3112d389613f9f02b2b531",
+  "source_uploaded_to_github": false,
+  "canonical_filename": "pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png",
+  "canonical_path": "exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png",
+  "size_px": {
+    "width": 4096,
+    "height": 4096
   },
   "format": "PNG",
   "color_mode": "RGBA",
   "transparent_background": true,
-  "sha256": "a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670",
-  "approval_date": "2026-11-06",
+  "sha256": "a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368",
+  "approval_status": "user-approved visual identity; no scholarly small-seal script certification",
   "historical_small_seal_glyph_certification": false,
   "public_brand_license_granted": false,
-  "binary_uploaded_to_github": false,
-  "source_delivery": "Local user-facing Primordial_Weave_Seal_V1.0_正式印章交付包.zip",
+  "binary_uploaded_to_github": true,
+  "visual_change_from_previous_version": "V1.1 adopts the newly approved seal visual based on 朱砂古印_織.png, with reduced transparent margins and interpolated exports; this is not the same underlying image as V1.0.",
+  "upscale_disclosure": "4096px is an interpolated upscale; it does not contain native 4K original detail.",
+  "source_delivery": "Primordial_Weave_Seal_V1.1_放大定稿素材包.zip",
+  "files": [
+    {
+      "path": "exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png",
+      "sha256": "a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368",
+      "gitBlob": "b45d4bd020350a02d055549d12a61c2ce9359dac",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 10488954,
+      "role": "primary transparent PNG; high-quality interpolated enlargement"
+    },
+    {
+      "path": "exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png",
+      "sha256": "48c93816b21138a7506f490340424e69e4db25621a6fc5868d001413fae5525a",
+      "gitBlob": "2a04eca1b52dc197a87ed590d0a35024b0048f51",
+      "width": 2048,
+      "height": 2048,
+      "bytes": 4661014,
+      "role": "transparent derivative"
+    },
+    {
+      "path": "exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png",
+      "sha256": "1771204b51f1b80d275b8d42e95a791421b855629b68bcc20abfded10ecfd948",
+      "gitBlob": "48fac9878590d731e4a19e6879be6ac9ce94ad16",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1461365,
+      "role": "transparent derivative"
+    },
+    {
+      "path": "references/pw-seal-zhi-on-paper-proof-v1.1.png",
+      "sha256": "38388f9a9fd0b89890a3582f9cd4c608a9903bc640050d67e3897fb4bbd85e04",
+      "gitBlob": "618cc503c908d63d69be13d1b76b2148066d3694",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1179745,
+      "role": "paper mock-up, not transparent source"
+    }
+  ],
   "other_image_replacements_performed": false,
-  "svg_created": false
+  "svg_created": false,
+  "history": [
+    {
+      "version": "1.0.0",
+      "manifest": "sources/seal/manifest-v1.0.json",
+      "status": "superseded; original PNG not uploaded to this repository"
+    }
+  ]
 }

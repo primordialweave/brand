@@ -1,0 +1,23 @@
+{
+  "brand": "Primordial Weave / 原初织界",
+  "asset": "織 cinnabar brand seal",
+  "version": "1.0.0",
+  "status": "approved-brand-artwork",
+  "source_original": "朱砂古印织字符.png",
+  "canonical_filename": "pw-seal-zhi-cinnabar-v1.0.png",
+  "size_px": {
+    "width": 1254,
+    "height": 1254
+  },
+  "format": "PNG",
+  "color_mode": "RGBA",
+  "transparent_background": true,
+  "sha256": "a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670",
+  "approval_date": "2026-11-06",
+  "historical_small_seal_glyph_certification": false,
+  "public_brand_license_granted": false,
+  "binary_uploaded_to_github": false,
+  "source_delivery": "Local user-facing Primordial_Weave_Seal_V1.0_正式印章交付包.zip",
+  "other_image_replacements_performed": false,
+  "svg_created": false
+}

@@ -10,7 +10,7 @@
 
 The **Primordial Weave (原初织界)** brand draws on Chinese philosophy, ink-wash aesthetics, and thoughtful modern open-source design.
 
-> **Status · Seal V1.0 visually approved / other graphics under refinement** (2026-11-06). The **織 cinnabar seal has been approved as brand artwork V1.0** and recorded in [its asset record](sources/seal/ASSET-RECORD.md), but **its PNG has not yet been uploaded to GitHub**. Other images, SVGs and fonts are unchanged and remain under refinement. Small-seal glyph scholarly certification is not claimed.
+> **Status · Seal V1.1 current (2026-11-07).** The approved **織 cinnabar brand seal V1.1** is now uploaded as three transparent PNG sizes plus a paper preview. The [current manifest](sources/seal/manifest.json) and [asset record](sources/seal/ASSET-RECORD.md) give exact files and hashes. V1.0 remains documented as superseded history. Logo/Mark, Banner, OG and avatar files have **not** been replaced; SVG remains deferred. This is brand artwork, not a scholarly certification of seal-script glyphs or a public-use license.
 
 ## Documentation
 
@@ -18,7 +18,7 @@ The **Primordial Weave (原初织界)** brand draws on Chinese philosophy, ink-w
 | --- | --- |
 | Brand direction and constraints | [Brand guidelines](guidelines/brand-guidelines.md) |
 | Taiji, circle and logo usage | [Logo usage](guidelines/logo-usage.md) |
-| Cinnabar seal V1.0 usage and verification limits | [Seal usage](guidelines/seal-usage.md) · [asset record](sources/seal/ASSET-RECORD.md) |
+| Cinnabar seal V1.1 usage and verification limits | [Seal usage](guidelines/seal-usage.md) · [asset record](sources/seal/ASSET-RECORD.md) |
 | Chinese/English typography | [Typography](guidelines/typography.md) |
 | Licensing and attribution | [Licensing policy](guidelines/licensing.md) |
 | Candidate color tokens | [colors.json](design-tokens/colors.json) |
@@ -39,10 +39,10 @@ brand/
 │   └── seal/           # Reserved; no artwork committed
 ├── exports/
 │   ├── svg/            # Reserved
-│   ├── png/            # Reserved
+│   ├── png/            # Approved V1.1 transparent seal PNGs
 │   ├── og/             # Reserved
 │   └── favicon/        # Reserved
-└── references/         # Reserved; drafts will be labeled clearly
+└── references/         # V1.1 paper proof + future labeled references
 ```
 
 Git does not store empty directories, so reserved folders contain `README.md` documentation rather than asset files.
@@ -57,7 +57,7 @@ Use `pw-<subject>-<variant>-<dimensions-if-needed>-v<major.minor>.<ext>` for **f
 - `pw-readme-banner-v1.1.png`
 - `pw-og-general-1200x630-v1.1.png`
 - `pw-github-social-1280x640-v1.1.png`
-- `pw-seal-zhi-cinnabar-v1.0.png` — **approved offline PNG**, not yet present in this GitHub repository; vector SVG deferred
+- [V1.1 4096px master PNG](exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png), [2048px](exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png), [1024px](exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png) and [paper proof](references/pw-seal-zhi-on-paper-proof-v1.1.png). SVG remains deferred.
 
 Unapproved explorations must include `draft` in their filename or live in `references/`. Never mix them with approved exports.
 

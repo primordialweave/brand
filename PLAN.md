@@ -1,7 +1,7 @@
 # Primordial Weave · 原初织界
 
 > **Open-source ecosystem roadmap / 开源品牌与组织建设执行计划**  
-> **版本：** v1.7 · 2026-11-06 正式印章 V1.0 资产登记，现有图片暂不替换  
+> **版本：** v1.8 · 2026-11-07 正式印章 V1.1 已上传核对，文档与版本清单同步  
 > **制定日期：** 2026-10-25  
 > **适用范围：** Primordial Weave 母品牌、GitHub 组织、品牌资源、开源项目及未来官网  
 > **核心主张：** Inspired by ancient wisdom. Built for the open future.  
@@ -413,12 +413,15 @@ flowchart TD
 
 ## 10. 资源组织、交付文件和命名约定
 
-> **印章定稿更新（2026-11-06）：**「織」字朱砂品牌印章 V1.0 已获视觉批准，文件 `pw-seal-zhi-cinnabar-v1.0.png`，SHA-256 `a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670`。PNG 本体保存在独立交付包，GitHub 本轮**仅增加文字登记**，并未上传该 PNG。**Mark、Banner、OG、头像和其他图片全部保持不变**；SVG 继续暂缓。正式品牌图形不等于古文字学标准小篆认证，也不构成对外公开使用许可。
+> **2026-11-07 V1.1 更新：** 当前推荐「織」朱砂印章为 V1.1。仓库已实际包含 1024/2048/4096px 三份透明 PNG（`exports/png/`）及宣纸效果图（`references/`）；四个文件均与本地交付包的 Git Blob 指纹和字节数一致，SHA-256 详见 `sources/seal/ASSET-RECORD.md`。`sources/seal/manifest.json` 已指向 V1.1，V1.0 归档为历史版本。原始 1254px 位图**尚未上传**；4096px 是插值放大而非真正原生 4K。**本次仅更新文字，不触碰 Mark、Banner、OG、头像或其他图片；SVG 仍暂缓。**
+
+
+> **历史记录（2026-11-06，V1.0 已被 V1.1 取代）：**「織」字朱砂品牌印章 V1.0 已获视觉批准，文件 `pw-seal-zhi-cinnabar-v1.0.png`，SHA-256 `a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670`。PNG 本体保存在独立交付包，GitHub 本轮**仅增加文字登记**，并未上传该 PNG。**Mark、Banner、OG、头像和其他图片全部保持不变**；SVG 继续暂缓。正式品牌图形不等于古文字学标准小篆认证，也不构成对外公开使用许可。
 
 
 > **2026-11-06 已连接并初始化 [`primordialweave/brand`](https://github.com/primordialweave/brand)。**
 > 本阶段只提交 **中英双语 README、品牌使用规范、候选 Token、目录说明、变更日志与本 PLAN**。
-> `sources/logo/`、`sources/seal/`、`exports/svg/`、`exports/png/`、`exports/og/`、`exports/favicon/` 和 `references/` 已通过各自的 `README.md` 预留；**没有上传任何 PNG、SVG、字标、印章、Banner、OG 或字体文件**。
+> `sources/logo/`、`exports/svg/`、`exports/og/` 和 `exports/favicon/` 仍为预留目录；`exports/png/` 已包含 V1.1 三尺寸透明印章 PNG，`references/` 已包含 V1.1 宣纸效果图；其他品牌图像、SVG 和字体尚未入库。
 > 视觉资产仍按 S1 工作稿打磨，待核定字形、权利和同源一致性后，再按本节命名规则发布。
 > 当前机器可读 Token 为 **candidate-not-final**；正式品牌授权和字体权利未被此次提交代为批准。
 
@@ -441,13 +444,13 @@ brand/
 │   └── typography.json
 ├── sources/                   # 经审查的可编辑母版与制作说明
 │   ├── logo/                   # 仅 README.md，暂无正式源文件
-│   └── seal/                   # 仅 README.md，暂无正式源文件
+│   └── seal/                   # V1.1 元数据/规范已登记，原始源图尚未上传
 ├── exports/
 │   ├── svg/                    # 仅 README.md，SVG 暂缓
-│   ├── png/                    # 仅 README.md，图片暂缓
+│   ├── png/                    # 已上传 V1.1 三尺寸正式透明印章 PNG
 │   ├── og/                     # 仅 README.md，图片暂缓
 │   └── favicon/                # 仅 README.md，图标暂缓
-├── references/                # 灵感稿与非定稿素材，明确标注草稿
+├── references/                # 已上传 V1.1 宣纸效果预览，后续参考稿需标注
 └── CHANGELOG.md
 ```
 
@@ -456,7 +459,7 @@ brand/
 - 正式：`pw-mark-minimal-light-v1.1.svg`、`pw-mark-standard-seal-v1.1.svg`。
 - 渠道：`pw-github-avatar-1024-v1.1.png`、`pw-readme-banner-v1.1.png`。
 - 社交：`pw-og-general-1200x630-v1.1.png`、`pw-github-social-1280x640-v1.1.png`。
-- 印章 V1.0：`pw-seal-zhi-cinnabar-v1.0.png`（正式视觉，待上传 GitHub）；印章 SVG 暂缓。
+- 印章 V1.1（当前推荐）：`pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png`（正式透明 4096px PNG）；1024/2048px 同目录；`references/pw-seal-zhi-on-paper-proof-v1.1.png` 仅为纸面展示图。V1.0 为历史记录，SVG 暂缓。
 - 草稿资产必须带 `draft` 或放在 `references/`，不得与正式版混放。
 
 ---
