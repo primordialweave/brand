@@ -81,7 +81,7 @@ def create_mark(mark_path: Path, seal_path: Path, output_dir: Path, strict=True)
         bg.alpha_composite(canvas)
         bg.convert('RGB').resize((800,800),Image.Resampling.LANCZOS).save(output_dir/f'proof-{stem}-800.jpg',quality=94)
     result={
-      'status':'layout-v1.1-proof-pending-visual-approval',
+      'status':'visual-approved-layout-v1.1',
       'layout_version':'1.1', 'reference_layout_version':'1.0',
       'previous_seal_position':[1585,1577],
       'offset_from_v1_0':[-105,-117],
@@ -100,11 +100,11 @@ def create_mark(mark_path: Path, seal_path: Path, output_dir: Path, strict=True)
 
 
 def main():
-    home=Path(__file__).resolve().parents[1]
+    home=Path(__file__).resolve().parents[3]
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--mark',type=Path,default=home/'sources/pw-mark-minimal-transparent-v1.0-2048.png')
-    p.add_argument('--seal',type=Path,default=home/'sources/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png')
-    p.add_argument('--out-dir',type=Path,default=home/'output')
+    p.add_argument('--mark',type=Path,default=home/'exports/png/pw-mark-minimal-transparent-v1.0-2048.png')
+    p.add_argument('--seal',type=Path,default=home/'exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png')
+    p.add_argument('--out-dir',type=Path,default=home/'build/standard-mark-v1.1')
     p.add_argument('--skip-hash-check',action='store_true',help='仅在明确重建新版本时使用，正式出图不要开启')
     a=p.parse_args()
     create_mark(a.mark,a.seal,a.out_dir,strict=not a.skip_hash_check)
