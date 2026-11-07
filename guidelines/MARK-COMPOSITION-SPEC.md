@@ -3,7 +3,7 @@
 **规范编号：** `PW-BRAND-STD-MARK-001`  
 **版式版本：** V1.1（相对 V1.0 只调整印章位置）  
 **修订日期：** 2026-11-07  
-**当前状态：** 已输出技术合成样张，待品牌视觉最终确认。未自动替换 GitHub 正式图片。
+**当前状态：** 品牌方已确认视觉定稿；2048×2048 透明 PNG 已实际上传 GitHub。此规范用于复现已批准文件，尚未替换组织主页 `.github` 中的旧 Banner / OG / 头像。
 
 ## 一、目的与绝对约束
 
@@ -19,8 +19,8 @@
 
 | 角色 | 源文件 | 原尺寸 | SHA-256 |
 | --- | --- | --- | --- |
-| 主体 | `sources/pw-mark-minimal-transparent-v1.0-2048.png` | 2048×2048 RGBA | `da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863` |
-| 印章 | `sources/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png` | 4096×4096 RGBA | `a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368` |
+| 主体 | `exports/png/pw-mark-minimal-transparent-v1.0-2048.png` | 2048×2048 RGBA | `da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863` |
+| 印章 | `exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png` | 4096×4096 RGBA | `a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368` |
 
 对应 GitHub 资产：
 
@@ -71,7 +71,7 @@ Figma/Affinity/Photoshop 的图片裁边设置可能不同，无法确定像素�
 
 ```bash
 python3 -m pip install Pillow
-python3 scripts/compose_mark.py
+python3 sources/logo/scripts/compose_mark.py
 ```
 
 脚本自动校验两张母图 SHA-256，按本规范固定参数执行透明裁边、LANCZOS 缩放和 `alpha_composite`，并在 Alpha>20 阈值下检测两图层是否碰撞。**必须保留哈希校验，不要跳过。**
@@ -79,7 +79,7 @@ python3 scripts/compose_mark.py
 产生的文件：
 
 ```text
-output/
+build/standard-mark-v1.1/
 ├── pw-mark-standard-seal-v1.1-2048.png   # 真透明交付候选
 ├── proof-light-800.jpg                  # 浅色查看用
 ├── proof-dark-800.jpg                   # 深色查看用
@@ -94,12 +94,14 @@ output/
 - [x] V1.1 印章确实向左 105px、向上 117px；大小不变。
 - [x] 两图层在 Alpha>20 可见区域无碰撞，间隙约 52px。
 - [x] 没有额外重绘、滤镜或生成式色彩污染。
-- [ ] 品牌方对浅色/深色和实际目标尺寸做最终视觉确认。
-- [ ] 如正式发布，在 `brand/exports/png/` 上传本版文件并更新 `sources/logo/` 规范、来源哈希、`CHANGELOG.md`。
+- [x] 品牌方已批准 V1.1 组合的位置、尺寸与视觉关系。
+- [x] 正式 PNG、合成规范和脚本已上传 GitHub，内容与三文件交付 ZIP 一致。
+- [x] 已修正脚本默认路径为仓库实际路径，并在本地仓库布局中复现相同 PNG SHA-256。
+- [ ] 深色专用版本及组织主页 Banner/OG/头像仍需单独验收。
 
 ## 七、限制与版本纪律
 
 - **本 V1.1 是标准 Mark 的“合成布局版本”，并非印章 V1.1 的再升级；**极简 Mark 仍是 V1.0。
 - 由于主图自身偏深，在深炭色背景下墨环对比度不足属于已知问题；需要另外制作深色专用版，不能将当前预览截图作为深色版本。
 - 4096px 印章由原始位图插值放大，**不是原生矢量**；本规范也是 PNG 组合，不代表 SVG 母版完成。
-- 本次文件更新不会替换 `brand`、`.github` 上的 Logo、Banner、OG 或组织头像。
+- 正式发布 PNG SHA-256：`1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175`。脚本默认从仓库根目录读取 `exports/png/` 中的锁定输入，向 `build/standard-mark-v1.1/` 写入结果，**不覆盖正式 `exports/png/` 图片**。本次文档/脚本修订不替换组织 `.github` 里的 Banner、OG 或头像。
