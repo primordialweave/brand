@@ -6,6 +6,15 @@ This log records **repository documentation and approved asset releases separate
 
 - Other brand assets, including the Logo / Mark / Banner / OG / avatar, are not replaced by the current seal release. SVG and final art licensing remain pending.
 
+## 2026-11-07 · Standard Mark V1.1 approved and documented
+
+- Verified `exports/png/pw-mark-standard-seal-v1.1-2048.png`, `guidelines/MARK-COMPOSITION-SPEC.md`, and `sources/logo/scripts/compose_mark.py` match the previously delivered three-file ZIP by Git blob SHA-1 and size.
+- Brand owner approved the V1.1 composition: 2048px RGBA canvas, minimal Mark 1760px at (55,50), approved seal 304px at (1480,1460).
+- Corrected the Python script to read its locked source PNGs from the repository's actual `exports/png/` directory, with non-destructive output at `build/standard-mark-v1.1/`.
+- Local repository-layout smoke test reproduced the already published PNG byte for byte; SHA-256: `1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175`.
+- Added `sources/logo/ASSET-RECORD.md` and `sources/logo/manifest.json`, synchronized English/Chinese README and logo guideline status.
+- No PNG binaries were modified or re-uploaded in these documentation commits; the organization `.github` Banner/OG/avatar remain unchanged. SVG and dark-mode-specialized artwork are pending.
+
 ## 2026-11-07 · Seal PNG V1.1 published and indexed
 
 - Set branded `織` seal **V1.1** as the current approved visual version and mark V1.0 as historical.
