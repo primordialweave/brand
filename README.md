@@ -10,14 +10,14 @@
 
 The **Primordial Weave (原初织界)** brand draws on Chinese philosophy, ink-wash aesthetics, and thoughtful modern open-source design.
 
-> **Status · Seal V1.1 current (2026-11-07).** The approved **織 cinnabar brand seal V1.1** is now uploaded as three transparent PNG sizes plus a paper preview. The [current manifest](sources/seal/manifest.json) and [asset record](sources/seal/ASSET-RECORD.md) give exact files and hashes. V1.0 remains documented as superseded history. Logo/Mark, Banner, OG and avatar files have **not** been replaced; SVG remains deferred. This is brand artwork, not a scholarly certification of seal-script glyphs or a public-use license.
+> **Status · Approved PNG marks (2026-11-07).** Minimal Mark V1.0, Standard Mark V1.1 (with approved 織 seal), and standalone Seal V1.1 have been uploaded. Standard Mark V1.1 is now [documented and reproducible](guidelines/MARK-COMPOSITION-SPEC.md). The organization's `.github` Banner/OG/avatar have **not** been replaced. SVG and dark-specific assets remain pending; brand artwork approval does not imply academic glyph certification or public reuse permission.
 
 ## Documentation
 
 | Area | Document |
 | --- | --- |
 | Brand direction and constraints | [Brand guidelines](guidelines/brand-guidelines.md) |
-| Taiji, circle and logo usage | [Logo usage](guidelines/logo-usage.md) |
+| Taiji, circle and logo usage | [Logo usage](guidelines/logo-usage.md) · [Standard Mark V1.1](guidelines/MARK-COMPOSITION-SPEC.md) · [Mark asset record](sources/logo/ASSET-RECORD.md) |
 | Cinnabar seal V1.1 usage and verification limits | [Seal usage](guidelines/seal-usage.md) · [asset record](sources/seal/ASSET-RECORD.md) |
 | Chinese/English typography | [Typography](guidelines/typography.md) |
 | Licensing and attribution | [Licensing policy](guidelines/licensing.md) |
@@ -35,11 +35,11 @@ brand/
 ├── guidelines/
 ├── design-tokens/
 ├── sources/
-│   ├── logo/           # Reserved; no artwork committed
+│   ├── logo/           # 1254px source raster, composer and asset manifest
 │   └── seal/           # Reserved; no artwork committed
 ├── exports/
 │   ├── svg/            # Reserved
-│   ├── png/            # Approved V1.1 transparent seal PNGs
+│   ├── png/            # Minimal Mark, Standard Mark and Seal PNGs
 │   ├── og/             # Reserved
 │   └── favicon/        # Reserved
 └── references/         # V1.1 paper proof + future labeled references
