@@ -1,7 +1,7 @@
 # Primordial Weave · 原初织界
 
 > **Open-source ecosystem roadmap / 开源品牌与组织建设执行计划**  
-> **版本：** v1.8 · 2026-11-07 正式印章 V1.1 已上传核对，文档与版本清单同步  
+> **版本：** v1.9 · 2026-11-07 标准 Mark V1.1 定稿与脚本可复现性验收  
 > **制定日期：** 2026-10-25  
 > **适用范围：** Primordial Weave 母品牌、GitHub 组织、品牌资源、开源项目及未来官网  
 > **核心主张：** Inspired by ancient wisdom. Built for the open future.  
@@ -92,6 +92,8 @@ flowchart TD
 ---
 
 ## 3. S1｜品牌视觉母版 V1.1（P0）
+
+> **2026-11-07 更新：** 极简 Mark V1.0 的三张 2048px PNG、正式「織」印章 V1.1，以及**标准带章 Mark V1.1 · 2048px 透明 PNG** 均已上传 `primordialweave/brand/exports/png/`。品牌方已确认 V1.1 构图。精确合成规范和修正后的仓库式脚本已上传；本地按仓库目录重建的 PNG 与线上正式文件 SHA-256 完全一致（`1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175`）。此处“定稿”仅指该标准 Mark PNG，**不代表 Banner、OG、头像、深色版、横向字标、SVG、品牌权属及篆字专业考证已经完成**。旧 SVG 相关勾选仅为历史候选工作。
 
 > **当前执行口径（2026-11-06）：** 详见附录 A。用户已暂缓 SVG，S1 以统一 PNG 物料作为当前可使用的视觉基准；字形专业核验和正式品牌授权仍待完成。下文 SVG 相关勾选为历史候选成果，不表示现有 PNG 交付包含最终 SVG。
 
@@ -413,6 +415,8 @@ flowchart TD
 
 ## 10. 资源组织、交付文件和命名约定
 
+> **2026-11-07 标准 Mark V1.1 已入库：** `exports/png/pw-mark-standard-seal-v1.1-2048.png`，SHA-256 `1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175`。`guidelines/MARK-COMPOSITION-SPEC.md`、`sources/logo/scripts/compose_mark.py`、`sources/logo/ASSET-RECORD.md` 及 `sources/logo/manifest.json` 已同步。脚本从仓库真实 `exports/png/` 路径读取输入，生成输出到 `build/standard-mark-v1.1/`，不会覆盖定稿 PNG。`.github` 组织主页里的旧 Banner/OG/头像尚未替换。
+
 > **2026-11-07 V1.1 更新：** 当前推荐「織」朱砂印章为 V1.1。仓库已实际包含 1024/2048/4096px 三份透明 PNG（`exports/png/`）及宣纸效果图（`references/`）；四个文件均与本地交付包的 Git Blob 指纹和字节数一致，SHA-256 详见 `sources/seal/ASSET-RECORD.md`。`sources/seal/manifest.json` 已指向 V1.1，V1.0 归档为历史版本。原始 1254px 位图**尚未上传**；4096px 是插值放大而非真正原生 4K。**本次仅更新文字，不触碰 Mark、Banner、OG、头像或其他图片；SVG 仍暂缓。**
 
 
@@ -443,11 +447,11 @@ brand/
 │   ├── colors.json
 │   └── typography.json
 ├── sources/                   # 经审查的可编辑母版与制作说明
-│   ├── logo/                   # 仅 README.md，暂无正式源文件
+│   ├── logo/                   # 原始极简 Mark 位图、可复现脚本及资产记录
 │   └── seal/                   # V1.1 元数据/规范已登记，原始源图尚未上传
 ├── exports/
 │   ├── svg/                    # 仅 README.md，SVG 暂缓
-│   ├── png/                    # 已上传 V1.1 三尺寸正式透明印章 PNG
+│   ├── png/                    # 已上传极简 Mark V1.0、标准 Mark V1.1 与印章 V1.1 PNG
 │   ├── og/                     # 仅 README.md，图片暂缓
 │   └── favicon/                # 仅 README.md，图标暂缓
 ├── references/                # 已上传 V1.1 宣纸效果预览，后续参考稿需标注
@@ -459,6 +463,7 @@ brand/
 - 正式：`pw-mark-minimal-light-v1.1.svg`、`pw-mark-standard-seal-v1.1.svg`。
 - 渠道：`pw-github-avatar-1024-v1.1.png`、`pw-readme-banner-v1.1.png`。
 - 社交：`pw-og-general-1200x630-v1.1.png`、`pw-github-social-1280x640-v1.1.png`。
+- 标准 Mark V1.1（正式）：`pw-mark-standard-seal-v1.1-2048.png`，透明 2048px PNG；由极简 Mark V1.0 与「織」印章 V1.1 按规范合成。
 - 印章 V1.1（当前推荐）：`pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png`（正式透明 4096px PNG）；1024/2048px 同目录；`references/pw-seal-zhi-on-paper-proof-v1.1.png` 仅为纸面展示图。V1.0 为历史记录，SVG 暂缓。
 - 草稿资产必须带 `draft` 或放在 `references/`，不得与正式版混放。
 
