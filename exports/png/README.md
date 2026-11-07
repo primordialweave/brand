@@ -18,3 +18,14 @@ The [paper mockup](../../references/pw-seal-zhi-on-paper-proof-v1.1.png) is stor
 - **No Mark, Banner, OG or avatar was replaced** during this document update.
 
 Do not store drafts or mockups here; place them in `references/` with clear labels. Track every approved revision in the [CHANGELOG](../../CHANGELOG.md).
+
+## Minimal and Standard Mark PNGs
+
+| Asset | File |
+| --- | --- |
+| Minimal Mark V1.0 · paper | [2048px](pw-mark-minimal-paper-v1.0-2048.png) |
+| Minimal Mark V1.0 · transparent | [2048px](pw-mark-minimal-transparent-v1.0-2048.png) |
+| Minimal Mark V1.0 · compact | [2048px](pw-mark-minimal-compact-v1.0-2048.png) |
+| **Standard Mark V1.1 · approved transparent version** | **[2048px](pw-mark-standard-seal-v1.1-2048.png)** |
+
+The standard mark uses the approved minimal mark and the independent 織 seal V1.1. It is reproducibly composed using the [specification](../../guidelines/MARK-COMPOSITION-SPEC.md) and [script](../../sources/logo/scripts/compose_mark.py). SHA-256: `1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175` ([asset record](../../sources/logo/ASSET-RECORD.md)). This does **not** mean the organization's older Banner/OG/avatar have been replaced.
