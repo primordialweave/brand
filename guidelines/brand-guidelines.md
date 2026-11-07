@@ -1,8 +1,6 @@
 # Primordial Weave · 品牌定位与视觉原则
 
-> 状态：整体视觉仍为候选规范；**「織」朱砂印章 V1.0 已获品牌视觉批准** · 2026-11-06
->
-> 本文件描述现阶段设计方向，**不是正式视觉母版或授权许可**。图片和 SVG 暂未入库；印章已独立锁定 PNG 与 SHA-256，等待上传。
+> **状态（2026-11-07）：** 极简 Mark V1.0、标准带章 Mark V1.1 及「織」字印章 V1.1 的 PNG 已在 brand 仓库正式登记并上传。标准 Mark 已获品牌方视觉确认；其他 Banner、OG、头像、深色版和 SVG 尚未统一，文档也不构成公共授权。
 
 ## 1. 品牌基础
 
@@ -62,4 +60,4 @@ Dao（道）、Taiji（太极）、Fangcun（方寸）、Shanhai（山海）等�
 - [ ] 品牌所有者批准正式色值、字体与图形。
 - [ ] 形成文件清单、版本、哈希与更新记录。
 
-**这轮不上传任何素材文件。** 预留目录详见 [sources](../sources/README.md)、[exports](../exports/README.md) 与 [references](../references/README.md)。
+当前图形资产见 [Mark 资产登记](../sources/logo/ASSET-RECORD.md) 及 [印章资产登记](../sources/seal/ASSET-RECORD.md)。其他目录见 [sources](../sources/README.md)、[exports](../exports/README.md) 与 [references](../references/README.md)。
