@@ -10,14 +10,14 @@
 
 **Primordial Weave（原初织界）** 是以中国传统哲学、水墨审美和现代开源精神为灵感的品牌。
 
-> **当前状态：「織」字朱砂品牌印章 V1.1 为正式推荐版本（2026-11-07）。** 1024、2048、4096px 透明 PNG 和宣纸效果图已实际上传，并与本地交付包完成指纹核对。V1.0 保留历史记录；Mark、Banner、OG、头像图片**均未替换**，SVG 继续暂缓。印章属于品牌化篆刻艺术图形，不宣称古文字学标准小篆认证，公开上传也不等于授予第三方商用许可。
+> **当前状态（2026-11-07）：** 极简 Mark V1.0、标准 Mark V1.1（带「織」字朱砂印章）与独立印章 V1.1 的 PNG 均已上传。标准 Mark 已获视觉确认，合成规范及脚本已能在真实仓库目录下复现完全一致的正式 PNG。组织 `.github` 主页旧 Banner、OG 与头像仍未替换；SVG、深色专用版及素材授权是独立待办。
 
 ## 文档导航
 
 | 内容 | 文件 |
 | --- | --- |
 | 品牌定位、理念、视觉原则 | [品牌规范](guidelines/brand-guidelines.md) |
-| 标志和太极使用 | [Logo 使用规范](guidelines/logo-usage.md) |
+| 标志和太极使用 | [Logo 使用规范](guidelines/logo-usage.md) · [标准 Mark 合成规范 V1.1](guidelines/MARK-COMPOSITION-SPEC.md) · [Mark 资产登记](sources/logo/ASSET-RECORD.md) |
 | 正式印章 V1.1 与文化考证边界 | [印章使用规范](guidelines/seal-usage.md) · [资产记录](sources/seal/ASSET-RECORD.md) |
 | 中英文字体与字号建议 | [字体规范](guidelines/typography.md) |
 | 著作权、字体及开源许可边界 | [授权说明](guidelines/licensing.md) |
@@ -60,10 +60,10 @@ Git 无法跟踪空目录。**目前仅印章 V1.1 的 PNG 和宣纸预览已上
 
 建议采用 `pw-<内容>-<变体>-<尺寸可选>-v<主版本.次版本>.<扩展名>`。
 
-下面均是**命名示例，不代表对应文件已存在**：
+以下除特别注明为示例的文件外，Mark 与印章 PNG 均已上传：
 
-- `pw-mark-minimal-light-v1.1.svg`
-- `pw-mark-standard-seal-v1.1.svg`
+- [极简 Mark V1.0 透明 PNG](exports/png/pw-mark-minimal-transparent-v1.0-2048.png)（已上传）；`pw-mark-minimal-light-v1.1.svg`（仅示例，SVG 暂缓）
+- [标准 Mark V1.1 透明 PNG](exports/png/pw-mark-standard-seal-v1.1-2048.png)（已上传）；`pw-mark-standard-seal-v1.1.svg`（仅示例）
 - `pw-github-avatar-1024-v1.1.png`
 - `pw-readme-banner-v1.1.png`
 - `pw-og-general-1200x630-v1.1.png`
