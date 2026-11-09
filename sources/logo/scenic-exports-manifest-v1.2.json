@@ -1,0 +1,115 @@
+{
+  "brand": "Primordial Weave",
+  "asset": "Scenic README Banner, OG, GitHub Social Preview",
+  "reviewed": "2026-11-10",
+  "status": "current recommended brand-repository exports, separate GitHub organization homepage not updated",
+  "assets": [
+    {
+      "name": "README Banner",
+      "version": "1.1",
+      "path": "exports/png/pw-readme-banner-scenic-composed-v1.1-2400x600.png",
+      "size_px": [
+        2400,
+        600
+      ],
+      "bytes": 1897453,
+      "sha256": "eb405f6264159f655402fb826346fcde10a0a0453e2b4d2f9c6c5d927d4bbe4e",
+      "git_blob_sha1": "13d83d180ab10cacd86ece106839340ede4ecf2c"
+    },
+    {
+      "name": "OG",
+      "version": "1.2",
+      "path": "exports/png/pw-og-share-scenic-composed-v1.2-1200x630.png",
+      "size_px": [
+        1200,
+        630
+      ],
+      "bytes": 1183544,
+      "sha256": "430c333a3d2666d5a53473dcf8d37ac4bb2475de919943979df962f708847da0",
+      "git_blob_sha1": "318adc15899f2f39cdb003f0989942fdec67acf4"
+    },
+    {
+      "name": "Social Preview",
+      "version": "1.2",
+      "path": "exports/png/pw-github-social-preview-scenic-composed-v1.2-1280x640.png",
+      "size_px": [
+        1280,
+        640
+      ],
+      "bytes": 1194152,
+      "sha256": "9ef11f2433dc0c14765ca5088259ccef4bb12d0c59b6c7d04ebf4471ac8dc98b",
+      "git_blob_sha1": "81c3479dbf25c66973fc0690992a62cbe661c790"
+    },
+    {
+      "name": "Social Preview optimized PNG",
+      "version": "1.2",
+      "path": "exports/png/pw-github-social-preview-scenic-composed-v1.2-1280x640-github-optimized.png",
+      "size_px": [
+        1280,
+        640
+      ],
+      "bytes": 571295,
+      "sha256": "b3c47e4120ce60cf869046d1345a98dbf137f8a9bd24bfbc9c1b664a66e25cd5",
+      "git_blob_sha1": "4991a3d3972a5b3fb14df2ac3710b647dd9ee8c5"
+    }
+  ],
+  "backgrounds": [
+    {
+      "path": "sources/backgrounds/金线云岭水墨长卷.png",
+      "size_px": [
+        2172,
+        724
+      ],
+      "sha256": "0c54fc3fa38c9803817d8585c4ffe1556c948f689765d5598d2f4a00edb74c08"
+    },
+    {
+      "path": "sources/backgrounds/金色织境云谷山水.png",
+      "size_px": [
+        1731,
+        909
+      ],
+      "sha256": "b21274b2c6ab5680b1b8f597b8bb7426d70fb9514894486f453960262923a655"
+    },
+    {
+      "path": "sources/backgrounds/金线流韵山河图.png",
+      "size_px": [
+        1774,
+        887
+      ],
+      "sha256": "f22f46008436623f8c42312fbdfb244f50f9f8d55ed4729571ba303986c2b149"
+    }
+  ],
+  "brand_sources": [
+    {
+      "path": "exports/png/pw-mark-minimal-transparent-v1.0-2048.png",
+      "sha256": "da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863"
+    },
+    {
+      "path": "exports/png/pw-seal-zhi-chongxi-v1.4-2048.png",
+      "sha256": "c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd"
+    },
+    {
+      "path": "exports/png/pw-wordmark-horizontal-en-v1.1-2400x600.png",
+      "sha256": "f50833686f7ede3f36f1ac54142eae448aab1a6b9ceca66732850b2ae3f352f2"
+    },
+    {
+      "path": "exports/png/pw-tagline-ebgaramond12-exact-transparent-1200x75.png"
+    }
+  ],
+  "production": {
+    "method": "Pillow exact alpha compositing over AI-generated clean scenic background plates; V1.2 OG/Social use broad Gaussian atmosphere lift",
+    "script": "sources/logo/scripts/compose.py",
+    "output_directory": "build/scenic-v1.2",
+    "scripts_status": "Repository-relative path correction committed; no end-to-end rebuild test performed in this verification."
+  },
+  "archived": [
+    "exports/png/pw-readme-banner-v1.1-seal-top-right-2400x600.png",
+    "exports/og/pw-og-share-v1.0-1200x630.png",
+    "exports/og/pw-github-social-preview-v1.0-1280x640.png"
+  ],
+  "outstanding": [
+    "Sync .github/assets organization home banner separately",
+    "Set repository social preview via GitHub settings if needed",
+    "Run repository composer in clean environment; visually inspect mobile and desktop cropping"
+  ]
+}
