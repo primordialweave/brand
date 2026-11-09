@@ -1,23 +1,21 @@
-# Logo Source & Reproducible Standard Mark
+# Logo sources and approved Mark
 
-2026-11-07：极简 Mark V1.0 三版 PNG、原始位图、标准 Mark V1.1 透明 PNG、合成规范和可执行脚本均已上传。标准 Mark V1.1 为品牌方批准的图形版本。
+**Current Mark:** V1.2 centered with V1.4 approved 「織」 seal (2026-11-09). Minimal Mark V1.0 is unchanged.
 
-## 文件入口
+- [Approved Mark PNG](../../exports/png/pw-mark-standard-seal-v1.2-centered-2048.png) · [minimal Mark master](../../exports/png/pw-mark-minimal-transparent-v1.0-2048.png)
+- [Approved seal V1.4](../../exports/png/pw-seal-zhi-chongxi-v1.4-4096.png)
+- [Approved glyph SVG trace](zhi-chongxi-approved-outline-v1.1.svg) · [clean baseplate](seal-baseplate-v1.0-1254.png)
+- [Centered layout specification](../../guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md) · [Mark manifest](manifest.json) · [Mark asset record](ASSET-RECORD.md)
+- [Composer](scripts/compose_seal_and_mark_v1_4.py) · [Verifier](scripts/verify_assets_v1_4.py)
 
-- [原始极简 Mark 1254px PNG](mark-minimal-source-1254.png)：源位图（不是 SVG）。
-- [极简 Mark V1.0 透明版](../../exports/png/pw-mark-minimal-transparent-v1.0-2048.png)：合成主体。
-- [「織」朱砂印章 V1.1](../../exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png)：合成印章。
-- [标准 Mark V1.1 透明版](../../exports/png/pw-mark-standard-seal-v1.1-2048.png)：已批准输出。
-- [合成脚本](scripts/compose_mark.py)、[精确合成规范](../../guidelines/MARK-COMPOSITION-SPEC.md)。
-- [资产登记](ASSET-RECORD.md)、[机器可读 Manifest](manifest.json)。
-
-## 可重复构建
+From the repository root:
 
 ```bash
-python3 -m pip install Pillow
-python3 sources/logo/scripts/compose_mark.py
+python3 -m pip install -r sources/logo/scripts/requirements-v1.4.txt
+python3 sources/logo/scripts/compose_seal_and_mark_v1_4.py
+python3 sources/logo/scripts/verify_assets_v1_4.py
 ```
 
-在仓库根目录执行。脚本会验证两份已锁定输入文件的 SHA-256，默认在 `build/standard-mark-v1.1/` 创建新的 PNG 和检查预览，不覆盖已发布文件。经本地仓库布局验证，生成 PNG 的 SHA-256 与 GitHub 定稿文件相同。
+Newly generated PNGs are placed in `build/v1.4/` rather than overwriting approved exports. The formerly approved V1.1 Mark and its [historical script](scripts/compose_mark.py) remain reproducible.
 
-SVG、深色专用版、横向字标、Banner、OG、头像和 favicon 仍需独立完成。印章属于品牌化篆刻设计，不宣称规范小篆学术认证。
+Note: V1.2 **centered** is a different approved layout from the earlier unapproved strict-corner draft. SVG is currently only the glyph trace, not the complete Mark.

@@ -1,7 +1,11 @@
-# Favicon · Reserved
+# Primordial Weave · Favicon V1.0
 
-No favicon files are published here yet.
+Favicon exports are derived from the approved minimal Mark V1.0, not the more complex stamp-bearing Mark.
 
-When the logo is approved, produce responsive 16/32/48px favicon variants and any larger sizes required by the actual website. At very small sizes, omit fine paper textures, gold rules and the seal; preserve the primary Taiji geometry and contrast.
+- [16×16 PNG](pw-favicon-v1.0-16.png)
+- [32×32 PNG](pw-favicon-v1.0-32.png)
+- [48×48 PNG](pw-favicon-v1.0-48.png)
+- [256×256 PNG](pw-favicon-v1.0-256.png)
+- [Multi-size ICO](pw-favicon-v1.0.ico)
 
-Record all output dimensions, format, source version and legibility checks.
+At 16px, gold rules and ink detail naturally diminish. This favicon uses the older minimal Mark (unchanged by seal V1.4). On dark backgrounds, black-ink contrast needs checking.

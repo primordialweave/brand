@@ -1,31 +1,26 @@
-# PNG Exports · Published Brand Artwork
+# PNG exports · Primordial Weave
 
-The **織 cinnabar brand seal V1.1** is published in this directory as approved PNG raster artwork.
-
-| File | Resolution | Role |
-| --- | --- | --- |
-| [pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png](pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png) | 4096×4096 RGBA | **Current recommended transparent master export** |
-| [pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png](pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png) | 2048×2048 RGBA | Transparent derived size |
-| [pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png](pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png) | 1024×1024 RGBA | Transparent derived size |
-
-The [paper mockup](../../references/pw-seal-zhi-on-paper-proof-v1.1.png) is stored under `references/` rather than here, and is not transparent.
-
-- All three sizes come from the same visually approved source `朱砂古印_織.png`; the **original raster source is not yet stored in GitHub**.
-- The 4096px version is high-quality interpolation, **not native 4K captured detail or a vector file**.
-- Full SHA-256 and version history: [asset record](../../sources/seal/ASSET-RECORD.md).
-- V1.0 remains historical (offline PNG, not hosted in this directory).
-- These assets are visible in a public GitHub repository; that does **not** grant public trademark, derivative or commercial-use rights.
-- **No Mark, Banner, OG or avatar was replaced** during this document update.
-
-Do not store drafts or mockups here; place them in `references/` with clear labels. Track every approved revision in the [CHANGELOG](../../CHANGELOG.md).
-
-## Minimal and Standard Mark PNGs
+> **Current approved identities (2026-11-09):** Chongxi-reference seal V1.4 and standard Mark V1.2 centered. Older V1.1 source versions are retained, not overwritten.
 
 | Asset | File |
 | --- | --- |
-| Minimal Mark V1.0 · paper | [2048px](pw-mark-minimal-paper-v1.0-2048.png) |
-| Minimal Mark V1.0 · transparent | [2048px](pw-mark-minimal-transparent-v1.0-2048.png) |
-| Minimal Mark V1.0 · compact | [2048px](pw-mark-minimal-compact-v1.0-2048.png) |
-| **Standard Mark V1.1 · approved transparent version** | **[2048px](pw-mark-standard-seal-v1.1-2048.png)** |
+| **Official seal V1.4 · 4096** | [PNG](pw-seal-zhi-chongxi-v1.4-4096.png) |
+| Official seal V1.4 · 2048 / 1254 | [2048](pw-seal-zhi-chongxi-v1.4-2048.png) · [1254](pw-seal-zhi-chongxi-v1.4-1254.png) |
+| **Official standard Mark V1.2 centered** | [PNG](pw-mark-standard-seal-v1.2-centered-2048.png) |
+| Minimal Mark V1.0 | [2048 transparent](pw-mark-minimal-transparent-v1.0-2048.png) |
+| English/Chinese/bilingual wordmarks | [EN](pw-wordmark-horizontal-en-v1.1-2400x600.png) · [ZH](pw-wordmark-horizontal-zh-v1.0-2400x600.png) · [bilingual](pw-wordmark-horizontal-bilingual-v1.0-2400x600.png) |
+| GitHub avatar | [1024px](pw-github-avatar-v1.0-1024.png) |
+| README Banner | [2400×600](pw-readme-banner-v1.1-seal-top-right-2400x600.png) |
+| Dark/light and monochrome Marks | [dark](pw-mark-dark-v1.0-1024.png) · [light](pw-mark-light-v1.0-1024.png) · [black](pw-mark-monochrome-black-v1.0-1024.png) · [white](pw-mark-monochrome-white-v1.0-1024.png) |
 
-The standard mark uses the approved minimal mark and the independent 織 seal V1.1. It is reproducibly composed using the [specification](../../guidelines/MARK-COMPOSITION-SPEC.md) and [script](../../sources/logo/scripts/compose_mark.py). SHA-256: `1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175` ([asset record](../../sources/logo/ASSET-RECORD.md)). This does **not** mean the organization's older Banner/OG/avatar have been replaced.
+**Important:** The README Banner, OG and Social Preview present in the repository are *older assets* using the previous seal. They have not been automatically regenerated with the V1.4 glyph; do not imply otherwise.
+
+## Traceability
+
+- [Seal manifest](../../sources/seal/manifest.json) · [Mark manifest](../../sources/logo/manifest.json) · [QA checks](../../sources/seal/qa-v1.4.json).
+- [Centered composition specification](../../guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md).
+- [Rebuild script](../../sources/logo/scripts/compose_seal_and_mark_v1_4.py).
+- Historical V1.1 seal and Mark PNGs remain intact, and `candidate` outputs remain for provenance only.
+- The seal glyph SVG is an approved trace from a small user-supplied reference image, not an installed or licensed Chongxi font file; 4096px plate uses raster interpolation.
+
+These public visual assets do not automatically carry an open-source artwork/trademark reuse license.

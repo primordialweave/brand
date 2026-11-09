@@ -1,7 +1,8 @@
-# SVG Exports · Reserved
+# SVG exports
 
-SVG production and review are postponed. **There are no SVG files in this folder.**
+The following glyph SVG files are available:
 
-A future final SVG must be valid, editable vector artwork with clear viewBox/path semantics. It must not merely contain a base64 raster image mislabeled as vector. Complex paper texture may be kept as a separately described optional graphic layer, with the core identity paths remaining editable.
+- [Black approved 織 trace](../../sources/svg/pw-zhi-chongxi-black-transparent-v1.1.svg)
+- [White approved 織 trace](../../sources/svg/pw-zhi-chongxi-white-transparent-v1.1.svg)
 
-Apply all brand checks, file-version naming and licensing before placing an SVG here.
+These are **editable outlines traced from a 144×148 image**, not actual font files or an SVG of the complete Primordial Weave Mark. Font licensing and academic seal-script verification are separate matters. Canonical composer input: [approved outline](../../sources/logo/zhi-chongxi-approved-outline-v1.1.svg).

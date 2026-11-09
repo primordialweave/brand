@@ -1,26 +1,33 @@
-# Primordial Weave · 「織」字印章使用规范
+# 朱砂「織」字品牌印章 · 正式使用规范 V1.4
 
-> **当前正式资产：印章 V1.4（2026-11-09）**；V1.1 为历史归档，不再用于新合成。品牌方视觉定稿不构成字体授权或古文字学认证。
+> **当前正式视觉版本：V1.4（2026-11-09）。** V1.1、V1.0 为历史版本，保留各自文件。此确认仅涉及品牌视觉，不是古文字学认证或商用授权。
 
-## 1. 正式使用文件
+## 正式文件
 
-- [2048px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-2048.png)——标准 Mark 合成输入。
-- [4096px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-4096.png)——高清独立印章资产（底板插值，不是原生 4K）。
-- [1254px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-1254.png)——原尺度版。
-- [底板 PNG](../sources/logo/seal-baseplate-v1.0-1254.png)、[已确认的 SVG 字形描摹](../sources/logo/zhi-chongxi-approved-outline-v1.1.svg)——锁定合成输入，不改字形骨架。
+| 用途 | 文件 |
+| --- | --- |
+| 首选主文件 | [4096px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-4096.png) |
+| 常规应用/Mark 合成 | [2048px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-2048.png) |
+| 原尺寸版 | [1254px 透明 PNG](../exports/png/pw-seal-zhi-chongxi-v1.4-1254.png) |
 
-## 2. 视觉规则
+## 印章来源与技术边界
 
-保持朱砂红印体、白文及白色内框；不得拉伸、旋转、重画字形、给内框添加荧光或加白色底板。必须保留真实透明外缘。黑色水墨背景下注意对比度；需要正式展示时提供浅色预览和深色场景校验。
+- 底板：1254×1254 朱砂红白框透明图，经连通域清理游离像素。
+- 印文：根据用户确认的 144×148px 崇羲篆体参考图**描摹的 SVG 轮廓**；没有使用或分发正式字体文件。
+- 色彩与结构：干净朱砂红底、白文、白色内框；禁止变色、随机重绘、替换笔画或拉伸。
+- 4096px 中字形来自 SVG 渲染，底板由 1254px 位图高质量放大；不应宣称底板为原生 4K。
+- 品牌图形视觉已批准，但古文字形制、字体/参考图片版权以及商用授权需单独核验。
 
-印章内文字轮廓来自用户提供的崇羲篆体参考截图，经人工确认的矢量描摹；**不宣称本仓库直接包含崇羲篆体字体文件，也不宣称专业小篆逐笔认证。**
+## 使用与复现
 
-## 3. 标准 Mark 组合
+- 官方标志的印章应采用同一个 V1.4 主文件，避免与 V1.1 混用。
+- 小尺寸图标不建议使用印章；独立印章亦不替代完整组织名称。
+- [资产记录](../sources/seal/ASSET-RECORD.md) · [机器清单](../sources/seal/manifest.json) · [QA](../sources/seal/qa-v1.4.json)。
+- [合成脚本](../sources/logo/scripts/compose_seal_and_mark_v1_4.py) 仅向 `build/v1.4/` 写入。
+- 其他 Banner / OG / Social Preview 尚未升级印章；组织主页仍需独立同步，不自动替换。
 
-正式组合位置见 [标准 Mark V1.2 合成规范](MARK-COMPOSITION-SPEC-V1.2.md)：印章位于 304×304 容器，(1482,1482)。其他应用（Banner/OG/社交图）原则上使用同一 V1.4 印章图源；旧应用图本次未自动重制。
+## 历史版本
 
-## 4. 归档与复现
-
-[V1.4 资产记录](../sources/seal/ASSET-RECORD.md) · [QA 报告](../sources/logo/QA-V1.2-V1.4.md) · [历史 V1.1](../exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png)。
-
-Logo/印章素材的品牌使用许可不等于对第三方自动开放商用或再分发。
+- [V1.1](../sources/seal/manifest-v1.1.json)：曾获正式视觉批准，已被 V1.4 取代，但二进制文件保留。
+- [V1.0](../sources/seal/manifest-v1.0.json)：历史版本。
+- 后续任何字形调整都必须另起版本、保留旧稿和 SHA-256。

@@ -1,9 +1,8 @@
-# Social / Open Graph Images · Reserved
+# Open Graph / Social Preview exports
 
-No social artwork has been published here yet.
+- [OG share image · 1200×630](pw-og-share-v1.0-1200x630.png)
+- [GitHub Social Preview · 1280×640](pw-github-social-preview-v1.0-1280x640.png)
 
-Future exports may include:
-- General Open Graph: `pw-og-general-1200x630-vX.Y.png`
-- GitHub social preview: `pw-github-social-1280x640-vX.Y.png`
+**Note (2026-11-09):** These files exist and are archived correctly, but they use an earlier seal variant. The newly approved seal V1.4 is not yet propagated into these images. The organizational `.github` graphics have not been changed. Update them separately after checking cropping and typography.
 
-Do not mix these with README banner files; they have different sizes and text-safe areas. Preserve readable English title, accessible contrast and a single canonical seal/Mark source. Audit cropped mobile previews and file size before release.
+Current seal / Mark documentation: [seal](../../sources/seal/manifest.json) · [Mark](../../sources/logo/manifest.json).
