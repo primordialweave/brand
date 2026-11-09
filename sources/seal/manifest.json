@@ -1,71 +1,79 @@
 {
   "brand": "Primordial Weave / 原初织界",
-  "asset": "織 cinnabar brand seal",
+  "asset": "Cinnabar seal containing the artwork glyph 織",
   "current_version": "1.4.0",
-  "version": "1.4.0",
-  "status": "approved-brand-artwork",
-  "approval_status": "user-approved visual identity 2026-11-09",
-  "release_date": "2026-11-09",
-  "canonical_filename": "pw-seal-zhi-chongxi-v1.4-4096.png",
+  "status": "brand-owner-visual-approved",
+  "approval_date": "2026-11-09",
   "canonical_path": "exports/png/pw-seal-zhi-chongxi-v1.4-4096.png",
-  "size_px": {
-    "width": 4096,
-    "height": 4096
-  },
-  "format": "PNG",
-  "color_mode": "RGBA",
-  "transparent_background": true,
-  "sha256": "0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234",
-  "exports": [
+  "canonical_sha256": "0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234",
+  "artifacts": [
     {
       "path": "exports/png/pw-seal-zhi-chongxi-v1.4-1254.png",
+      "sha256": "ad6003a6af85b85cb6346299dbbdbf3aa5f4f5e4c54662cb7d3d6b92c12fa85a",
+      "git_blob": "c440ae57c2a879ed4ffbede5be954849a0aa2b58",
+      "bytes": 1627658,
       "width": 1254,
       "height": 1254,
-      "sha256": "ad6003a6af85b85cb6346299dbbdbf3aa5f4f5e4c54662cb7d3d6b92c12fa85a"
+      "format": "PNG",
+      "color_mode": "RGBA",
+      "alpha": "transparent"
     },
     {
       "path": "exports/png/pw-seal-zhi-chongxi-v1.4-2048.png",
+      "sha256": "c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd",
+      "git_blob": "aa776182dd30c57d910f32605af55359013287bb",
+      "bytes": 3578290,
       "width": 2048,
       "height": 2048,
-      "sha256": "c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd"
+      "format": "PNG",
+      "color_mode": "RGBA",
+      "alpha": "transparent"
     },
     {
       "path": "exports/png/pw-seal-zhi-chongxi-v1.4-4096.png",
+      "sha256": "0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234",
+      "git_blob": "3062d7c76758c03674403f1d5455390a7470fed0",
+      "bytes": 9474726,
       "width": 4096,
       "height": 4096,
-      "sha256": "0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234"
+      "format": "PNG",
+      "color_mode": "RGBA",
+      "alpha": "transparent"
     }
   ],
-  "inputs": [
+  "sources": [
     {
       "path": "sources/logo/seal-baseplate-v1.0-1254.png",
       "sha256": "1a86d984cb2ef3e4b821b2f2a7f41a0acfd2f2b411d101050939f4daf2ea6f6f",
-      "role": "clean cinnabar/red baseplate"
+      "role": "clean red/white plate, raster native 1254px"
     },
     {
       "path": "sources/logo/zhi-chongxi-approved-outline-v1.1.svg",
       "sha256": "9fe81c02fd6069709a518f537542ce432a4d174c4d195b0371e9eb9569e76a81",
-      "role": "traced, user-approved reference 織 glyph"
+      "role": "user-approved trace of 144x148 reference glyph; not a font file"
     },
     {
       "path": "exports/png/pw-zhi-chongxi-white-transparent-v1.1-2048.png",
       "sha256": "17852a525e9e66b707cf2c74a29bdb36c87f8121c9f8f04e0c699975648ad877",
-      "role": "approved glyph raster comparison"
+      "role": "rendered reference"
     }
   ],
-  "reproduction": {
-    "script": "sources/logo/scripts/compose_seal_and_mark_v1_4.py",
-    "verify": "sources/logo/scripts/verify_assets_v1_4.py",
-    "requirements": "sources/logo/scripts/requirements-v1.4.txt",
-    "output_dir": "build/v1.4"
-  },
-  "historical_v1_1": {
-    "manifest": "sources/seal/manifest-v1.1.json",
-    "canonical_path": "exports/png/pw-seal-zhi-chongxi-v1.4-4096.png",
-    "archived_not_overwritten": true
-  },
-  "historical_small_seal_glyph_certification": false,
-  "public_brand_license_granted": false,
-  "upscale_disclosure": "4096px uses an approved SVG outline for the glyph and interpolated 1254px raster seal plate; not a native 4K plate.",
-  "source_glyph_disclosure": "Glyph traced from user-supplied low-resolution Chongxi reference; no original licensed Chongxi font binary used."
+  "compose": "sources/logo/scripts/compose_seal_and_mark_v1_4.py",
+  "verify": "sources/logo/scripts/verify_assets_v1_4.py",
+  "quality_record": "sources/seal/qa-v1.4.json",
+  "export_note": "4096px character rendered from SVG; baseplate interpolated from 1254px raster (not native 4K plate).",
+  "rights": "visual approval only; glyph authenticity, font/reference rights and public reuse are not certified or licensed",
+  "history": [
+    {
+      "version": "1.1.0",
+      "manifest": "sources/seal/manifest-v1.1.json",
+      "status": "superseded; original PNG files retained"
+    },
+    {
+      "version": "1.0.0",
+      "manifest": "sources/seal/manifest-v1.0.json",
+      "status": "historical"
+    }
+  ],
+  "organization_homepage_updated": false
 }
