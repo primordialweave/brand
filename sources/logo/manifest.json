@@ -1,26 +1,29 @@
 {
   "brand": "Primordial Weave / 原初织界",
-  "asset": "standard mark with seal",
-  "current_version": "1.2.0",
-  "approval": "visual-approved",
-  "review_date": "2026-11-09",
-  "status": "approved-brand-artwork",
+  "asset": "Standard Mark with seal",
+  "current_version": "1.2.0-centered",
+  "seal_version": "1.4.0",
+  "status": "brand-owner-visual-approved",
+  "approval_date": "2026-11-09",
+  "output": {
+    "path": "exports/png/pw-mark-standard-seal-v1.2-centered-2048.png",
+    "sha256": "a0939cbd0466ab81d7a78895dc1194ac1e75035d2e4b531b268452091fa06a20",
+    "git_blob": "be2afcb64af51f6e41c1c69eec8bd734d8043caa",
+    "px": 2048,
+    "bytes": 3314006,
+    "width": 2048,
+    "height": 2048,
+    "format": "PNG",
+    "mode": "RGBA",
+    "alpha": "transparent"
+  },
   "master_mark": {
     "path": "exports/png/pw-mark-minimal-transparent-v1.0-2048.png",
     "sha256": "da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863"
   },
   "seal": {
-    "version": "1.4.0",
     "path": "exports/png/pw-seal-zhi-chongxi-v1.4-2048.png",
     "sha256": "c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd"
-  },
-  "output": {
-    "path": "exports/png/pw-mark-standard-seal-v1.2-centered-2048.png",
-    "sha256": "a0939cbd0466ab81d7a78895dc1194ac1e75035d2e4b531b268452091fa06a20",
-    "width": 2048,
-    "height": 2048,
-    "format": "PNG",
-    "mode": "RGBA"
   },
   "layout": {
     "canvas": [
@@ -37,17 +40,8 @@
         152
       ]
     },
-    "mark_square": {
-      "rect": [
-        262,
-        262,
-        1786,
-        1786
-      ],
-      "calculated_alpha_threshold": 12
-    },
     "seal": {
-      "size": [
+      "layer_size": [
         304,
         304
       ],
@@ -55,27 +49,28 @@
         1482,
         1482
       ],
-      "alpha_crop_threshold": 12,
-      "padding": 12
+      "alpha_threshold": 12,
+      "padding": 12,
+      "fitted_seal_size": [
+        304,
+        301
+      ]
     }
   },
   "reproduction": {
     "script": "sources/logo/scripts/compose_seal_and_mark_v1_4.py",
-    "verify": "sources/logo/scripts/verify_assets_v1_4.py",
-    "spec": "guidelines/MARK-COMPOSITION-SPEC-V1.2.md",
+    "check": "sources/logo/scripts/verify_assets_v1_4.py",
+    "spec": "guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md",
+    "command": "python3 sources/logo/scripts/compose_seal_and_mark_v1_4.py",
     "output_dir": "build/v1.4",
-    "sha256_match_verified": true
+    "byte_identical_local_verification": true
   },
-  "historical_v1_1": {
-    "path": "exports/png/pw-mark-standard-seal-v1.2-centered-2048.png",
-    "sha256": "a0939cbd0466ab81d7a78895dc1194ac1e75035d2e4b531b268452091fa06a20",
-    "archived_not_overwritten": true
+  "historical": {
+    "version": "1.1.0",
+    "manifest": "sources/logo/manifest-v1.1.json",
+    "path": "exports/png/pw-mark-standard-seal-v1.1-2048.png",
+    "sha256": "1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175"
   },
-  "limitations": [
-    "SVG Mark master not delivered",
-    "dark-background-specific application needs separate acceptance",
-    "visual approval is not ancient-script authenticity certification",
-    "brand artwork is not blanket licensed for public reuse",
-    "organization .github Banner/OG/avatar not automatically replaced"
-  ]
+  "note": "The approved centered variant does not implement the strict inside-corner formula in the historical V1.2 draft; do not describe the two layouts as equivalent.",
+  "organization_homepage_updated": false
 }
