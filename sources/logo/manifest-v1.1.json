@@ -1,0 +1,66 @@
+{
+  "brand": "Primordial Weave / 原初织界",
+  "asset": "standard mark with seal",
+  "current_version": "1.1.0",
+  "approval": "visual-approved",
+  "review_date": "2026-11-07",
+  "master_mark": {
+    "path": "exports/png/pw-mark-minimal-transparent-v1.0-2048.png",
+    "sha256": "da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863"
+  },
+  "seal": {
+    "path": "exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png",
+    "sha256": "a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368"
+  },
+  "output": {
+    "path": "exports/png/pw-mark-standard-seal-v1.1-2048.png",
+    "sha256": "1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175",
+    "git_blob_sha1": "7156059024f463e0b331d07e049f4710e4dae08b",
+    "width": 2048,
+    "height": 2048,
+    "format": "PNG",
+    "mode": "RGBA"
+  },
+  "layout": {
+    "canvas": [
+      2048,
+      2048
+    ],
+    "mark": {
+      "size": [
+        1760,
+        1760
+      ],
+      "xy": [
+        55,
+        50
+      ]
+    },
+    "seal": {
+      "size": [
+        304,
+        304
+      ],
+      "xy": [
+        1480,
+        1460
+      ],
+      "alpha_crop_threshold": 12,
+      "padding": 12
+    }
+  },
+  "reproduction": {
+    "script": "sources/logo/scripts/compose_mark.py",
+    "spec": "guidelines/MARK-COMPOSITION-SPEC.md",
+    "command": "python3 sources/logo/scripts/compose_mark.py",
+    "output_dir": "build/standard-mark-v1.1",
+    "sha256_match_verified": true
+  },
+  "limitations": [
+    "not an SVG",
+    "dark-background-specific asset not approved",
+    "does not update organization .github images",
+    "seal glyph not certified as standardized seal script",
+    "no public blanket brand-art license"
+  ]
+}

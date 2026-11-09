@@ -1,0 +1,84 @@
+{
+  "brand": "Primordial Weave",
+  "date": "2026-11-09",
+  "seal_version": "V1.4",
+  "mark_layout": "V1.2 centered",
+  "status": "approved; reproducible locally with pinned dependencies",
+  "inputs_sha256": {
+    "baseplate": "1a86d984cb2ef3e4b821b2f2a7f41a0acfd2f2b411d101050939f4daf2ea6f6f",
+    "glyph_svg": "9fe81c02fd6069709a518f537542ce432a4d174c4d195b0371e9eb9569e76a81",
+    "glyph_white_png": "17852a525e9e66b707cf2c74a29bdb36c87f8121c9f8f04e0c699975648ad877",
+    "mark_master": "da6ce844e3ffc8dcb27da10d610a6dbaf801f0de7003821cdd4dd06458a96863"
+  },
+  "reference_svg_png_mask_iou": 1,
+  "alpha": {
+    "seal_visible_components_at_threshold_16": 1,
+    "transparent_corners": true
+  },
+  "position": {
+    "mark_xy": [
+      143,
+      152
+    ],
+    "mark_px": [
+      1760,
+      1760
+    ],
+    "seal_layer_xy": [
+      1482,
+      1482
+    ],
+    "seal_layer_px": [
+      304,
+      304
+    ],
+    "seal_fit_px": [
+      304,
+      301
+    ]
+  },
+  "outputs": [
+    {
+      "path": "exports/png/pw-seal-zhi-chongxi-v1.4-1254.png",
+      "sha256": "ad6003a6af85b85cb6346299dbbdbf3aa5f4f5e4c54662cb7d3d6b92c12fa85a",
+      "git_blob": "c440ae57c2a879ed4ffbede5be954849a0aa2b58",
+      "px": 1254,
+      "bytes": 1627658
+    },
+    {
+      "path": "exports/png/pw-seal-zhi-chongxi-v1.4-2048.png",
+      "sha256": "c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd",
+      "git_blob": "aa776182dd30c57d910f32605af55359013287bb",
+      "px": 2048,
+      "bytes": 3578290
+    },
+    {
+      "path": "exports/png/pw-seal-zhi-chongxi-v1.4-4096.png",
+      "sha256": "0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234",
+      "git_blob": "3062d7c76758c03674403f1d5455390a7470fed0",
+      "px": 4096,
+      "bytes": 9474726
+    },
+    {
+      "path": "exports/png/pw-mark-standard-seal-v1.2-centered-2048.png",
+      "sha256": "a0939cbd0466ab81d7a78895dc1194ac1e75035d2e4b531b268452091fa06a20",
+      "git_blob": "be2afcb64af51f6e41c1c69eec8bd734d8043caa",
+      "px": 2048,
+      "bytes": 3314006
+    }
+  ],
+  "verified_rebuild_sha256_match": true,
+  "method": "No generation during approved asset release. Pillow LANCZOS and alpha compositing; OpenCV connected-component cleanup; CairoSVG rendering of traced glyph.",
+  "env": {
+    "Pillow": "12.3.0",
+    "numpy": "2.3.5",
+    "opencv_python_headless": "4.13.0.92",
+    "CairoSVG": "2.8.2"
+  },
+  "limitations": [
+    "Source glyph was traced from a 144x148 screenshot of a Chongxi-style glyph; not proof of font provenance or historical character accuracy.",
+    "Baseplate 1254px source resampled at higher PNG dimensions.",
+    "The Mark V1.2 centered layout is distinct from the superseded strict-inside-corner draft.",
+    "Organization profile and other Banner/OG assets were not replaced."
+  ]
+}

@@ -1,36 +1,36 @@
-# Primordial Weave · 織字朱砂印章资产登记
+# Primordial Weave · 「織」字朱砂印章资产记录
 
-## 当前版本：V1.1
+## 当前正式版：V1.4（2026-11-09）
 
-- **状态：** 品牌视觉正式推荐 / 已上传 GitHub；V1.0 已被取代但保留历史清单。
-- **批准范围：** 品牌化篆刻艺术用途，不是古文字学标准小篆的逐笔认证，也未授予公众再分发或商用许可。
-- **原始创作位图：** `朱砂古印_織.png`，1254×1254 RGBA，尚未上传 GitHub，SHA-256 `3b6cd5b7f0b1db5c89819a46fa5b4ae715ac6e7fbc3112d389613f9f02b2b531`。
-- **格式：** 透明主文件 RGBA；宣纸预览 RGB。
-- **制程披露：** 裁掉多余透明留白并高质量放大，**并非原生 4K 或可编辑 SVG**。
+品牌方确认这版视觉定稿。字形为根据已提供的崇羲篆体参考图片描摹并核对的矢量轮廓；**不是实际加载崇羲字体文件，也不代表字形已获得古文字学认证**。
 
-| 当前仓库路径 | 像素 | SHA-256 |
-| --- | ---: | --- |
-| [`exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png`](../../exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png) | 4096 × 4096 | `a6f035646b400cc2b6b818dd6f765f8afa590b60d04fe49be2cacc3a02598368` |
-| [`exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png`](../../exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-2048.png) | 2048 × 2048 | `48c93816b21138a7506f490340424e69e4db25621a6fc5868d001413fae5525a` |
-| [`exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png`](../../exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-1024.png) | 1024 × 1024 | `1771204b51f1b80d275b8d42e95a791421b855629b68bcc20abfded10ecfd948` |
-| [`references/pw-seal-zhi-on-paper-proof-v1.1.png`](../../references/pw-seal-zhi-on-paper-proof-v1.1.png) | 1024 × 1024 | `38388f9a9fd0b89890a3582f9cd4c608a9903bc640050d67e3897fb4bbd85e04` |
+| 正式文件 | 尺寸 | SHA-256 |
+| --- | --- | --- |
+| [pw-seal-zhi-chongxi-v1.4-1254.png](../../exports/png/pw-seal-zhi-chongxi-v1.4-1254.png) | 1254×1254 | `ad6003a6af85b85cb6346299dbbdbf3aa5f4f5e4c54662cb7d3d6b92c12fa85a` |
+| [pw-seal-zhi-chongxi-v1.4-2048.png](../../exports/png/pw-seal-zhi-chongxi-v1.4-2048.png) | 2048×2048 | `c1d4d5bc7349d5e49660a8297d7523eae4b2ca545a428d9245db384eb6f726bd` |
+| [pw-seal-zhi-chongxi-v1.4-4096.png](../../exports/png/pw-seal-zhi-chongxi-v1.4-4096.png) | 4096×4096 | `0e00c99908e2d07cfe5d4c56fb5bd86e4c3779eb1b6b3b602c34ec8230985234` |
 
-上述四个文件已与本地交付包的 **Git blob SHA-1** 和文件长度一致，原本地交付清单中的 SHA-256 同样逐项匹配。
+**推荐主文件**：4096px 透明 PNG；2048px 为通用合成输入，1254px 为源尺寸导出。4096px 采用 SVG 渲染文字、1254px 底板插值缩放，不是原生 4K 底板。
 
-当前正式透明主图：`exports/png/pw-seal-zhi-cinnabar-enlarged-v1.1-4096.png`。2048 与 1024 为同一批准设计的尺寸版；`references/` 下的宣纸效果图只用于展示，不可替代透明图片。
+## 锁定来源与复现
 
-## 历史版本 V1.0
+- 无字朱砂底板：`sources/logo/seal-baseplate-v1.0-1254.png`，SHA-256 `1a86d984cb2ef3e4b821b2f2a7f41a0acfd2f2b411d101050939f4daf2ea6f6f`。
+- 「織」字轮廓：`sources/logo/zhi-chongxi-approved-outline-v1.1.svg`，SHA-256 `9fe81c02fd6069709a518f537542ce432a4d174c4d195b0371e9eb9569e76a81`。
+- [可执行合成脚本](../logo/scripts/compose_seal_and_mark_v1_4.py) · [QA 报告](qa-v1.4.json) · [Manifest](manifest.json)。
 
-- 文件：`pw-seal-zhi-cinnabar-v1.0.png`
-- SHA-256：`a323d4c77a01e8f1a0b1e0859cee967bb49ac9bb3b56921c0c1b61e6381f4670`
-- 历史状态：品牌视觉曾批准，**目前非最新推荐版本**；原图仍在历史本地交付包，未存放于本仓库。
-- 历史记录：[manifest-v1.0.json](manifest-v1.0.json)。
+在仓库根目录执行：
 
-## 发布规则
+```bash
+python3 -m pip install -r sources/logo/scripts/requirements-v1.4.txt
+python3 sources/logo/scripts/compose_seal_and_mark_v1_4.py
+python3 sources/logo/scripts/verify_assets_v1_4.py
+```
 
-- 不得用旧版候选字形或另一次生成的近似章替换 V1.1；任何图形变更都应提升版本号、更新哈希。
-- 保持源图、透明导出和预览图职责分离，未来新增原始 PNG 可放在 `sources/seal/`，但必须注明它是位图而非可编辑 SVG。
-- 本次更新没有替换组织主页图片或其他 Mark / Banner / OG / 头像。
-- 如需宣称「标准小篆」需再次独立逐笔专业核验；字体或参考图的使用权与品牌使用权另行确认。
+重建输出位于 `build/v1.4/`，不会覆盖已经定稿的 `exports/png/`。
 
-参阅 [印章使用规范](../../guidelines/seal-usage.md)。
+## 历史与使用边界
+
+- V1.1 的三个 PNG 与 [历史 Manifest](manifest-v1.1.json) 保留，不再是当前推荐资产。
+- 先前带 `candidate` 后缀的 V1.4 文件保留作追溯；正式引用应使用无候选后缀文件。
+- 品牌视觉确认不等于字体来源授权、古文字学逐笔认证或向公众授予商用/再分发许可。
+- README Banner、OG、Social Preview 等旧素材尚未统一替换新印章；本次只发布印章与标准 Mark 的正式版本。
