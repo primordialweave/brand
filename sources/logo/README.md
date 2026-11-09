@@ -8,6 +8,13 @@
 - [Centered layout specification](../../guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md) · [Mark manifest](manifest.json) · [Mark asset record](ASSET-RECORD.md)
 - [Composer](scripts/compose_seal_and_mark_v1_4.py) · [Verifier](scripts/verify_assets_v1_4.py)
 
+## Scenic media (Banner V1.1 · OG/Social V1.2)
+
+- [Current scenic outputs](../../exports/png/README.md) · [Manifest](scenic-exports-manifest-v1.2.json) · [QA](SCENIC-ASSETS-QA-V1.2.md).
+- Background-only plates: [sources/backgrounds](../backgrounds/).
+- [Scenic Pillow composer](scripts/compose.py) accepts the repository folder structure and writes only to `build/scenic-v1.2/` (not `exports/png/`). Requires Pillow and NumPy.
+- Upload to `brand` does **not** replace the separate `.github` organization homepage banner.
+
 From the repository root:
 
 ```bash
