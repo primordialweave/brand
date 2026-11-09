@@ -4,8 +4,16 @@ This log records **repository documentation and approved asset releases separate
 
 ## Unreleased
 
-- Pending: refresh README Banner, OG and Social Preview with approved seal V1.4 and separately update the organization's `.github` imagery.
+- Pending: sync the new scenic Banner from `brand` to the separate `.github` organization homepage; verify live Social Preview settings and thumbnail cropping.
 - Complete Mark native SVG, third-party reference/font rights clearance and optional historical glyph certification are not included in this visual release.
+
+## 2026-11-10 · Scenic Banner V1.1 / OG and Social Preview V1.2 verified in GitHub
+
+- Confirmed user-uploaded README Banner (2400×600, V1.1), OG (1200×630, V1.2), Social Preview (1280×640, V1.2), and indexed-PNG optimized Social Preview (571,295 bytes) are **byte-identical** to the delivery files by Git blob SHA-1 and file size.
+- Updated bilingual README and `exports/` source documentation to current scenic links, preserving former Banner / OG / Social assets as historical files.
+- Added [Scenic Manifest](sources/logo/scenic-exports-manifest-v1.2.json) and [Scenic QA](sources/logo/SCENIC-ASSETS-QA-V1.2.md), including background provenance, dimensions and SHA-256.
+- Fixed the uploaded `sources/logo/scripts/compose.py` package-specific paths to repository-relative inputs and `build/scenic-v1.2/` output; end-to-end clean-environment rerun remains open.
+- The separate `primordialweave/.github` profile still references its existing `assets/primordial-weave-banner.png` and was **not** modified; uploading PNGs to `brand` does not set GitHub repository Social Preview.
 
 ## 2026-11-09 · Official seal V1.4 and centered standard Mark V1.2 released
 
