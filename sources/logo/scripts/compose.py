@@ -6,7 +6,7 @@ Inputs are already approved background images, minimal Mark V1.0, approved Engli
 wordmark V1.1, and approved seal V1.4. No text-to-image/AI generation is used.
 
 Run from anywhere with: python3 /path/to/.../scripts/compose.py
-Only writes within this package folder; never overwrites Github files.
+Only writes to repo/build/scenic-v1.2; never overwrites published GitHub exports.
 """
 from __future__ import annotations
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -14,20 +14,20 @@ import numpy as np
 from pathlib import Path
 import hashlib, json, math
 
-ROOT=Path(__file__).resolve().parent.parent
+ROOT=Path(__file__).resolve().parents[3]  # repository root
 SOURCES=ROOT/'sources'
-EXPORTS=ROOT/'exports'
-PREVIEWS=ROOT/'previews'
+EXPORTS=ROOT/'build/scenic-v1.2/exports'
+PREVIEWS=ROOT/'build/scenic-v1.2/previews'
 for folder in [EXPORTS,PREVIEWS]: folder.mkdir(parents=True, exist_ok=True)
 
 PATHS={
  'bg_banner': SOURCES/'backgrounds/金线云岭水墨长卷.png',
  'bg_og': SOURCES/'backgrounds/金色织境云谷山水.png',
  'bg_social': SOURCES/'backgrounds/金线流韵山河图.png',
- 'mark': SOURCES/'brand/pw-mark-minimal-transparent-v1.0-2048.png',
- 'seal': SOURCES/'brand/pw-seal-zhi-chongxi-v1.4-2048.png',
- 'wordmark': SOURCES/'brand/pw-wordmark-horizontal-en-v1.1-2400x600.png',
- 'tagline': SOURCES/'brand/pw-tagline-ebgaramond12-exact-transparent-1200x75.png',
+ 'mark': ROOT/'exports/png/pw-mark-minimal-transparent-v1.0-2048.png',
+ 'seal': ROOT/'exports/png/pw-seal-zhi-chongxi-v1.4-2048.png',
+ 'wordmark': ROOT/'exports/png/pw-wordmark-horizontal-en-v1.1-2400x600.png',
+ 'tagline': ROOT/'exports/png/pw-tagline-ebgaramond12-exact-transparent-1200x75.png',
 }
 SPECS={
  'readme_banner': {
@@ -206,7 +206,7 @@ def build():
         yy+=36
         canvas.paste(im,(40,yy)); yy+=im.height+48
     canvas.crop((0,0,canvas.width,yy)).save(PREVIEWS/'three-asset-comparison.jpg',quality=92)
-    (ROOT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (EXPORTS.parent/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return manifest
 
 if __name__=='__main__':
