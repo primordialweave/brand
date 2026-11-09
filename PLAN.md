@@ -1,13 +1,13 @@
 # Primordial Weave · 原初织界
 
 > **Open-source ecosystem roadmap / 开源品牌与组织建设执行计划**  
-> **版本：** v2.0 · 2026-11-09 正式印章 V1.4 与标准 Mark V1.2 居中版发布及可复现性验收  
+> **版本：** v2.1 · 2026-11-10 山水 Banner V1.1 / OG 与 Social Preview V1.2 入库核验  
 > **制定日期：** 2026-10-25  
 > **适用范围：** Primordial Weave 母品牌、GitHub 组织、品牌资源、开源项目及未来官网  
 > **核心主张：** Inspired by ancient wisdom. Built for the open future.  
 > **中文主张：** 灵感源自古老智慧，创造面向开放未来的工具。
 
-## 当前资产状态快照｜2026-11-09（优先于本文历史阶段记录）
+## 当前资产状态快照｜2026-11-10（优先于本文历史阶段记录）
 
 > **品牌方已确认正式视觉版：** 极简 Mark V1.0（未变）；「織」字朱砂印章 **V1.4**；带章标准 Mark **V1.2 居中版**。旧 V1.1 的图像、脚本和 Manifest 保留用于追溯，早期 V1.2 严格内侧齐边草案已被 [居中正式规范](guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md) 取代。以下带日期的旧阶段记录为历史状态，不应再用作当前下载或使用建议。
 
@@ -21,8 +21,9 @@
 
 ### 尚待完成（不得误认为已完成）
 
-- [ ] 用 V1.4 新印章更新现存 README Banner、OG 和 GitHub Social Preview，并分别检查不同尺寸裁切。
-- [ ] 独立核验、更新 `primordialweave/.github` 组织主页及头像；入库到 `brand` **不会自动替换**组织主页。
+- [x] 在 `brand/exports/png/` 上传采用 V1.4 新印章的山水系列：README Banner V1.1、OG V1.2、Social Preview V1.2 和 571 KB 优化版。四张 PNG 与交付原件的 Git Blob SHA-1 一致，见 [Scenic Manifest](sources/logo/scenic-exports-manifest-v1.2.json) 与 [QA](sources/logo/SCENIC-ASSETS-QA-V1.2.md)。
+- [ ] 新增仓库合成脚本在干净环境中重新运行并核对哈希；实测移动端/社交分享的裁切、可读性。
+- [ ] 将当前山水 Banner 另行同步到 `primordialweave/.github/assets/primordial-weave-banner.png` 并检查中英文组织主页及头像；目前 `.github` 仍引用独立旧图，入库到 `brand` **不会自动替换**组织主页。
 - [ ] 字体来源/描摹参考素材的权利核查和古文字学专业认证（如需宣称“规范小篆”）；本次确认仅为**品牌视觉批准**。
 - [ ] 完整 Mark 原生矢量 SVG 仍暂缓；当前仅有「織」字的可编辑描摹 SVG，不能当作整套 Mark 的 SVG。
 
@@ -648,4 +649,5 @@ brand/
 **S3 Gate 3 暂未完全通过。** 详见 `S3-REPORT.md`。
 ## 版本补充记录
 
+- **2026-11-10 / v2.1**：山水 Banner V1.1、OG V1.2、Social Preview V1.2 及 GitHub 优化版完成上传核对；更新双语 README、资源目录、Manifest、QA 和合成脚本路径，组织主页仍待同步。
 - **2026-11-09 / v2.0**：V1.4 印章 + V1.2 居中版标准 Mark 定稿，合成与质量验证入库。
