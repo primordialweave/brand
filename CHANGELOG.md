@@ -4,7 +4,18 @@ This log records **repository documentation and approved asset releases separate
 
 ## Unreleased
 
-- Other brand assets, including the Logo / Mark / Banner / OG / avatar, are not replaced by the current seal release. SVG and final art licensing remain pending.
+- Pending: refresh README Banner, OG and Social Preview with approved seal V1.4 and separately update the organization's `.github` imagery.
+- Complete Mark native SVG, third-party reference/font rights clearance and optional historical glyph certification are not included in this visual release.
+
+## 2026-11-09 · Official seal V1.4 and centered standard Mark V1.2 released
+
+- Brand owner approved the **Chongxi-reference 織 cinnabar seal V1.4** and **standard Mark V1.2 centered** as the current visual identity. This approval is visual only, not historic glyph certification or open artwork licensing.
+- Promoted four byte-identical PNGs from existing candidate blobs to canonical release paths: `pw-seal-zhi-chongxi-v1.4-{1254,2048,4096}.png` and `pw-mark-standard-seal-v1.2-centered-2048.png` under `exports/png/`. The candidate files remain for provenance.
+- Verified local repository-style rebuild (Pillow, NumPy, OpenCV, CairoSVG): all four output SHA-256 digests matched the published PNGs.
+- Added versioned/current manifests, V1.4 QA record, complete reproducible composer/verifier and dependency pins.
+- Published [centered implementation specification](guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md), explicitly superseding the earlier strict inside-corner V1.2 draft. V1.1 files and historical specs remain unchanged.
+- Synchronized English/Chinese READMEs, logo/seal guidelines, PNG/SVG/OG/favicon directory guides and PLAN V2.0.
+- Important remaining scope: README Banner / OG / Social Preview still use prior seal art; organization `.github` images remain to be updated separately. The approved glyph is a trace from a small reference image, not an installed Chongxi font.
 
 ## 2026-11-07 · Standard Mark V1.1 approved and documented
 

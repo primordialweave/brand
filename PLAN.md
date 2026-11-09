@@ -1,11 +1,40 @@
 # Primordial Weave · 原初织界
 
 > **Open-source ecosystem roadmap / 开源品牌与组织建设执行计划**  
-> **版本：** v1.9 · 2026-11-07 标准 Mark V1.1 定稿与脚本可复现性验收  
+> **版本：** v2.0 · 2026-11-09 正式印章 V1.4 与标准 Mark V1.2 居中版发布及可复现性验收  
 > **制定日期：** 2026-10-25  
 > **适用范围：** Primordial Weave 母品牌、GitHub 组织、品牌资源、开源项目及未来官网  
 > **核心主张：** Inspired by ancient wisdom. Built for the open future.  
 > **中文主张：** 灵感源自古老智慧，创造面向开放未来的工具。
+
+## 当前资产状态快照｜2026-11-09（优先于本文历史阶段记录）
+
+> **品牌方已确认正式视觉版：** 极简 Mark V1.0（未变）；「織」字朱砂印章 **V1.4**；带章标准 Mark **V1.2 居中版**。旧 V1.1 的图像、脚本和 Manifest 保留用于追溯，早期 V1.2 严格内侧齐边草案已被 [居中正式规范](guidelines/MARK-COMPOSITION-SPEC-V1.2-CENTERED.md) 取代。以下带日期的旧阶段记录为历史状态，不应再用作当前下载或使用建议。
+
+### 当前已完成并入库
+
+- [x] 三尺寸正式透明印章：`exports/png/pw-seal-zhi-chongxi-v1.4-{1254,2048,4096}.png`。
+- [x] 正式标准 Mark：`exports/png/pw-mark-standard-seal-v1.2-centered-2048.png`。
+- [x] 极简 Mark、英文/中文/中英字标、组织头像、README Banner、OG、Social Preview、明暗色与单色 Mark、Favicon PNG/ICO 均有文件入库。
+- [x] 独立 V1.4 合成与 QA 脚本：`sources/logo/scripts/compose_seal_and_mark_v1_4.py`、`verify_assets_v1_4.py`。
+- [x] V1.4/V1.2 Manifest、SHA-256、合成坐标和视觉批准已登记：[印章](sources/seal/manifest.json) · [Mark](sources/logo/manifest.json) · [QA](sources/seal/qa-v1.4.json)。
+
+### 尚待完成（不得误认为已完成）
+
+- [ ] 用 V1.4 新印章更新现存 README Banner、OG 和 GitHub Social Preview，并分别检查不同尺寸裁切。
+- [ ] 独立核验、更新 `primordialweave/.github` 组织主页及头像；入库到 `brand` **不会自动替换**组织主页。
+- [ ] 字体来源/描摹参考素材的权利核查和古文字学专业认证（如需宣称“规范小篆”）；本次确认仅为**品牌视觉批准**。
+- [ ] 完整 Mark 原生矢量 SVG 仍暂缓；当前仅有「織」字的可编辑描摹 SVG，不能当作整套 Mark 的 SVG。
+
+**工程复现命令：**
+
+```bash
+python3 -m pip install -r sources/logo/scripts/requirements-v1.4.txt
+python3 sources/logo/scripts/compose_seal_and_mark_v1_4.py
+python3 sources/logo/scripts/verify_assets_v1_4.py
+```
+
+输出到 `build/v1.4/`，不覆盖 `exports/png/` 正式图。历史书写中任何“尚未上传 PNG/OG/Favicon”字样均被本快照替代。
 
 ## 0. 使用说明
 
@@ -415,6 +444,10 @@ flowchart TD
 
 ## 10. 资源组织、交付文件和命名约定
 
+> **2026-11-09 正式更新：** 现行印章为 V1.4（1254/2048/4096 PNG），现行带章标准 Mark 为 V1.2 居中版（2048 PNG），位于 `exports/png/`；合成脚本、QA、Manifests 和居中规范见本文件顶部“当前资产状态快照”。此前 V1.1 和 2026-11-06 的“预留目录”描述属于历史快照，不再表示实际仓库缺失。OG/Favicon 文件现已存在，但 Banner/OG/Social Preview 尚未换用 V1.4 印章。
+
+
+
 > **2026-11-07 标准 Mark V1.1 已入库：** `exports/png/pw-mark-standard-seal-v1.1-2048.png`，SHA-256 `1b776f96c9dcbcfe6838bd07c0d737916496e13b3e27114e4cea2da9110c1175`。`guidelines/MARK-COMPOSITION-SPEC.md`、`sources/logo/scripts/compose_mark.py`、`sources/logo/ASSET-RECORD.md` 及 `sources/logo/manifest.json` 已同步。脚本从仓库真实 `exports/png/` 路径读取输入，生成输出到 `build/standard-mark-v1.1/`，不会覆盖定稿 PNG。`.github` 组织主页里的旧 Banner/OG/头像尚未替换。
 
 > **2026-11-07 V1.1 更新：** 当前推荐「織」朱砂印章为 V1.1。仓库已实际包含 1024/2048/4096px 三份透明 PNG（`exports/png/`）及宣纸效果图（`references/`）；四个文件均与本地交付包的 Git Blob 指纹和字节数一致，SHA-256 详见 `sources/seal/ASSET-RECORD.md`。`sources/seal/manifest.json` 已指向 V1.1，V1.0 归档为历史版本。原始 1254px 位图**尚未上传**；4096px 是插值放大而非真正原生 4K。**本次仅更新文字，不触碰 Mark、Banner、OG、头像或其他图片；SVG 仍暂缓。**
@@ -613,3 +646,6 @@ brand/
 - [ ] 设置分支保护、团队权限与私密漏洞报告；真实项目补足语言特定 CI 与许可。
 
 **S3 Gate 3 暂未完全通过。** 详见 `S3-REPORT.md`。
+## 版本补充记录
+
+- **2026-11-09 / v2.0**：V1.4 印章 + V1.2 居中版标准 Mark 定稿，合成与质量验证入库。
